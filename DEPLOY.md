@@ -52,8 +52,9 @@ sudo git pull origin main
 
 ### A1. Create an Nginx site config
 
-Pick the port you want. Examples below use **port 8080** — change `listen` to `80`
-for the standard web port.
+This serves the site on the standard web port **80** (so it loads at
+`http://YOUR_SERVER_IP` with no port number). To use a different port instead,
+change every `80` below to your chosen port (e.g. `8080`).
 
 ```bash
 sudo nano /etc/nginx/sites-available/netlayer
@@ -63,8 +64,8 @@ Paste this:
 
 ```nginx
 server {
-    listen 8080;
-    listen [::]:8080;
+    listen 80;
+    listen [::]:80;
 
     server_name YOUR_SERVER_IP;
 
@@ -91,7 +92,7 @@ Save (Ctrl+O, Enter) and exit (Ctrl+X).
 # Enable it
 sudo ln -s /etc/nginx/sites-available/netlayer /etc/nginx/sites-enabled/
 
-# (optional) remove the default site so it doesn't clash on port 80
+# Remove the default site so it doesn't clash on port 80
 sudo rm -f /etc/nginx/sites-enabled/default
 
 # Test the config, then reload
@@ -100,25 +101,25 @@ sudo systemctl reload nginx
 sudo systemctl enable nginx   # start on boot
 ```
 
-### A3. Open the firewall for your port
+### A3. Open the firewall for port 80
 
 If `ufw` is active:
 
 ```bash
-sudo ufw allow 8080/tcp     # or 80/tcp if you used port 80
+sudo ufw allow 80/tcp
 sudo ufw reload
 ```
 
 > If you're on a cloud provider (AWS, GCP, Azure, Oracle, DigitalOcean, etc.),
-> also open the same port in the provider's **Security Group / firewall** dashboard.
+> also open **port 80 (HTTP)** in the provider's **Security Group / firewall** dashboard.
 
 ### A4. Open the site
 
 ```
-http://YOUR_SERVER_IP:8080
+http://YOUR_SERVER_IP
 ```
 
-(or `http://YOUR_SERVER_IP` if you used port 80)
+No port number needed.
 
 ---
 
@@ -128,10 +129,11 @@ Good for a quick look; not ideal for production (stops when you log out unless y
 
 ```bash
 cd /var/www/netlayer
-python3 -m http.server 8080 --bind 0.0.0.0
+sudo python3 -m http.server 80 --bind 0.0.0.0
 ```
 
-Open `http://YOUR_SERVER_IP:8080`. Press Ctrl+C to stop.
+Open `http://YOUR_SERVER_IP`. Press Ctrl+C to stop.
+(Binding to port 80 needs `sudo`. For an unprivileged test, use `8080` instead and open `http://YOUR_SERVER_IP:8080`.)
 
 ### Make Python server run permanently (systemd)
 
@@ -148,9 +150,9 @@ After=network.target
 
 [Service]
 WorkingDirectory=/var/www/netlayer
-ExecStart=/usr/bin/python3 -m http.server 8080 --bind 0.0.0.0
+ExecStart=/usr/bin/python3 -m http.server 80 --bind 0.0.0.0
 Restart=always
-User=www-data
+User=root
 
 [Install]
 WantedBy=multi-user.target
@@ -162,7 +164,7 @@ Then:
 sudo systemctl daemon-reload
 sudo systemctl enable --now netlayer
 sudo systemctl status netlayer      # check it's running
-sudo ufw allow 8080/tcp             # open firewall
+sudo ufw allow 80/tcp               # open firewall
 ```
 
 ---
@@ -199,5 +201,5 @@ Certbot auto-renews. Your site will then be available at `https://yourdomain.com
 | Can't reach the site | Confirm firewall (`ufw`) **and** cloud security group allow your port |
 | `nginx -t` fails | Re-check the config file for typos; fix and retest |
 | 403 Forbidden | Run `sudo chown -R www-data:www-data /var/www/netlayer` |
-| Port already in use | Pick another port, or `sudo lsof -i :8080` to see what's using it |
+| Port already in use | Pick another port, or `sudo lsof -i :80` to see what's using it |
 | Changes not showing | Hard-refresh (Ctrl+Shift+R); assets cache for 7 days |
