@@ -518,6 +518,37 @@ td.green-val{color:var(--green);font-weight:700}
 .value-d{font-size:14px;color:rgba(var(--ink),.6);line-height:1.7}
 
 /* ═══════════════════════════════════════════
+   TESTIMONIALS
+═══════════════════════════════════════════ */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-2);border-top:1px solid var(--line)}
+.testi-card{background:var(--cell);padding:42px 38px;display:flex;flex-direction:column;gap:22px;transition:background .3s}
+.testi-card:hover{background:var(--hover)}
+.testi-quote{font-size:15.5px;color:rgba(var(--ink),.78);line-height:1.65;font-weight:500;flex:1;position:relative;padding-top:10px}
+.testi-quote::before{content:'"';position:absolute;top:-22px;left:-4px;font-family:'Bebas Neue',sans-serif;font-size:90px;line-height:1;color:var(--accent);opacity:.45}
+.testi-meta{display:flex;align-items:center;gap:14px;padding-top:18px;border-top:1px solid var(--line)}
+.testi-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:18px;color:#fff;flex-shrink:0}
+.testi-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.04em;color:var(--heading)}
+.testi-role{font-size:11.5px;color:rgba(var(--ink),.5);margin-top:2px;letter-spacing:.04em}
+
+/* ═══════════════════════════════════════════
+   INDUSTRIES SERVED (mini cards)
+═══════════════════════════════════════════ */
+.industries{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line-2);border-top:1px solid var(--line)}
+.industry{background:var(--cell);padding:30px 22px;text-align:center;transition:background .3s,transform .25s;cursor:default}
+.industry:hover{background:var(--hover);transform:translateY(-2px)}
+.industry .ic{width:32px;height:32px;margin:0 auto 14px;color:var(--accent-2)}
+.industry .ic svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.industry .nm{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--heading)}
+
+/* awards/recognition strip */
+.awards{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 40px;padding:32px 52px;border-top:1px solid var(--line);background:var(--bg)}
+.award{display:flex;align-items:center;gap:14px}
+.award-ic{width:34px;height:34px;color:var(--accent-2);flex-shrink:0}
+.award-ic svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.award-t{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em;color:var(--heading);line-height:1.2}
+.award-d{font-size:11.5px;color:rgba(var(--ink),.55);letter-spacing:.04em;margin-top:3px}
+
+/* ═══════════════════════════════════════════
    SPEC TABLE (product pages)
 ═══════════════════════════════════════════ */
 .spec-table{border-top:1px solid var(--line)}
@@ -668,6 +699,9 @@ footer{padding:60px 52px 44px;border-top:1px solid var(--line);display:grid;grid
   .stats-grid,.cards-grid,.cards-grid-2,.adv-list,.team-grid,.pricing-grid,.prod-highlights{grid-template-columns:1fr}
   .region-grid{grid-template-columns:1fr 1fr}
   .trust-strip{grid-template-columns:1fr 1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .industries{grid-template-columns:repeat(3,1fr)}
+  .awards{padding:24px 24px;flex-direction:column;align-items:flex-start;gap:18px}
   .news-grid{grid-template-columns:1fr}
   .logo-wall{grid-template-columns:repeat(3,1fr)}
   .values-grid{grid-template-columns:1fr}
