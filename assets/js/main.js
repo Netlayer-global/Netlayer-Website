@@ -95,6 +95,28 @@ document.addEventListener('click', function (e) {
   if (item) item.classList.toggle('open');
 });
 
+// ─── Click-to-navigate for non-anchor elements with [href] ───
+// (cards / news-cards rendered as <div href="..."> become clickable like links)
+document.addEventListener('click', function (e) {
+  var el = e.target.closest('[href]');
+  if (!el || el.tagName === 'A' || el.tagName === 'AREA') return;
+  // ignore if user clicked on an inner real link/button
+  if (e.target.closest('a,button')) return;
+  var href = el.getAttribute('href');
+  if (!href) return;
+  // middle-click / cmd-click → open in new tab
+  if (e.metaKey || e.ctrlKey || e.button === 1) { window.open(href, '_blank'); return; }
+  window.location.href = href;
+});
+// keyboard accessibility: enter/space on a focused [href] div
+document.addEventListener('keydown', function (e) {
+  if (e.key !== 'Enter' && e.key !== ' ') return;
+  var el = e.target.closest('[href]');
+  if (!el || el.tagName === 'A' || el.tagName === 'AREA') return;
+  e.preventDefault();
+  window.location.href = el.getAttribute('href');
+});
+
 // ─── Contact form (Web3Forms — set your access key to go live) ───
 document.addEventListener('submit', function (e) {
   if (!(e.target && e.target.id === 'contact-form')) return;
