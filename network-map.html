@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Network Map — Interactive Global Footprint | Netlayer</title>
+<meta name="description" content="Explore the Netlayer global network on a live interactive map: 200+ Points of Presence, fiber routes and regional coverage.">
+<meta name="theme-color" content="#070a11">
+<link rel="canonical" href="https://www.netlayer.io/network-map.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Netlayer">
+<meta property="og:title" content="Network Map — Interactive Global Footprint | Netlayer">
+<meta property="og:description" content="Explore the Netlayer global network on a live interactive map: 200+ Points of Presence, fiber routes and regional coverage.">
+<meta property="og:url" content="https://www.netlayer.io/network-map.html">
+<meta property="og:image" content="https://www.netlayer.io/assets/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Network Map — Interactive Global Footprint | Netlayer">
+<meta name="twitter:description" content="Explore the Netlayer global network on a live interactive map: 200+ Points of Presence, fiber routes and regional coverage.">
+<meta name="twitter:image" content="https://www.netlayer.io/assets/og-image.svg">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Barlow+Condensed:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>(function(){try{var t=localStorage.getItem('netlayer-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div id="nav-mount"></div>
+<main id="main">
+<div class="inner-hero" style="padding-bottom:60px">
+    <div class="page-label">Network / Map</div>
+    <div class="page-title">The Netlayer<br>backbone, live.</div>
+    <p class="page-sub">Explore our global footprint on a live, interactive map — 200+ Points of Presence interconnected by diverse subsea and terrestrial routes. Filter by region, search a market, or click any node for detail.</p>
+  </div>
+
+  <div class="map-shell">
+    <aside class="map-sidebar">
+      <div class="map-search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="mapSearch" placeholder="Search a market…" autocomplete="off">
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-head">Points of Presence</div>
+        <label class="filter-row"><input type="checkbox" class="f-pop" data-region="Americas" checked><span>Americas</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-pop" data-region="Europe" checked><span>Europe &amp; EMEA</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-pop" data-region="Asia" checked><span>Asia Pacific</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-pop" data-region="Oceania" checked><span>Oceania</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-pop" data-region="Africa" checked><span>Africa</span></label>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-head">Fiber Routes</div>
+        <label class="filter-row"><input type="checkbox" id="fRoutes" checked><span>Backbone &amp; subsea</span></label>
+        <label class="filter-row"><input type="checkbox" id="fLabels" checked><span>Market labels</span></label>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-head">Legend</div>
+        <div class="legend-row"><span class="lg-dot hub"></span> Core hub</div>
+        <div class="legend-row"><span class="lg-dot edge"></span> Regional PoP</div>
+        <div class="legend-row"><span class="lg-line"></span> Fiber route</div>
+      </div>
+
+      <div class="sidebar-foot">AS24482 · 200+ PoPs · 30+ Markets</div>
+    </aside>
+    <div class="map-canvas" id="netMap" aria-label="Netlayer interactive network map"></div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-cell reveal"><div class="stat-num">200+</div><div class="stat-label">Points of Presence</div></div>
+    <div class="stat-cell reveal" data-delay="1"><div class="stat-num">30+</div><div class="stat-label">Subsea Cables</div></div>
+    <div class="stat-cell reveal" data-delay="2"><div class="stat-num">&lt;50ms</div><div class="stat-label">Intra-APAC Latency</div></div>
+  </div>
+
+  <section class="section-sm">
+    <div class="eyebrow reveal">Regional Reach</div>
+    <div class="section-heading-sm reveal">Coverage where it counts.</div>
+  </section>
+  <div class="region-grid">
+    <div class="region-cell reveal"><div class="rnum">95+</div><div class="rname">Asia Pacific</div><div class="rdesc">The densest part of our network — Singapore, Hong Kong, Tokyo, Sydney and beyond.</div></div>
+    <div class="region-cell reveal" data-delay="1"><div class="rnum">60+</div><div class="rname">Europe &amp; EMEA</div><div class="rdesc">London-anchored reach into continental Europe, the Middle East and Africa.</div></div>
+    <div class="region-cell reveal" data-delay="2"><div class="rnum">30+</div><div class="rname">Americas</div><div class="rdesc">New York gateway connecting North America to our trans-Pacific routes.</div></div>
+    <div class="region-cell reveal" data-delay="3"><div class="rnum">15+</div><div class="rname">Emerging Markets</div><div class="rdesc">High-growth Southeast Asian and Southern Hemisphere markets others can't reach.</div></div>
+  </div>
+
+  <section class="section">
+    <div class="two-col">
+      <div class="reveal">
+        <div class="eyebrow">Route Intelligence</div>
+        <div class="section-heading">Diverse paths, by design.</div>
+        <p class="section-body">Every market is reachable via multiple diverse routes — subsea and terrestrial — so a single cable cut never takes you offline. Our team engineers the optimal path for your traffic, balancing latency, resilience and cost across the entire backbone.</p>
+        <a class="btn-outline" href="contact.html">Request a Route Plan</a>
+      </div>
+      <div class="reveal" data-delay="1" style="display:flex;flex-direction:column;gap:1px;background:var(--line-2)">
+        <div style="background:var(--cell);padding:26px 30px;display:flex;justify-content:space-between;align-items:center">
+          <div style="font-size:13.5px;color:rgba(var(--ink),.62)">London → Singapore</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--accent-2)">~162ms</div>
+        </div>
+        <div style="background:var(--cell);padding:26px 30px;display:flex;justify-content:space-between;align-items:center">
+          <div style="font-size:13.5px;color:rgba(var(--ink),.62)">Tokyo → Hong Kong</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--accent-2)">~48ms</div>
+        </div>
+        <div style="background:var(--cell);padding:26px 30px;display:flex;justify-content:space-between;align-items:center">
+          <div style="font-size:13.5px;color:rgba(var(--ink),.62)">Sydney → Singapore</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--green)">~92ms</div>
+        </div>
+        <div style="background:var(--cell);padding:26px 30px;display:flex;justify-content:space-between;align-items:center">
+          <div style="font-size:13.5px;color:rgba(var(--ink),.62)">New York → Taipei</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--accent-2)">~210ms</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <div><div class="cta-heading">Can't see your<br><em>market on the map?</em></div><p class="cta-sub">We add new PoPs and routes on demand. Tell us where you need to be.</p></div>
+    <a class="btn-primary" href="contact.html" style="position:relative;z-index:1">Request a Market</a>
+  </div>
+  <div class="footer-slot"></div>
+</main>
+<script src="assets/js/partials.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="assets/js/map.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -3,90 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NETLAYER — Expand Across APAC and Beyond</title>
-<meta name="description" content="Netlayer is your trusted global wholesale network carrier — 200+ PoPs across 30+ markets, backed by our resilient global backbone AS24482. Cloud Connect, IP Transit, IX Peering and more.">
+<title>NETLAYER — Expand Across APAC and Beyond | Global Network Carrier</title>
+<meta name="description" content="Netlayer is your trusted global wholesale network carrier — 200+ PoPs across 30+ markets, backed by global backbone AS24482. Cloud Connect, IP Transit, IX Peering, DC Wave, DIA, Last Mile and EPL.">
+<meta name="theme-color" content="#070a11">
+<link rel="canonical" href="https://www.netlayer.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Netlayer">
+<meta property="og:title" content="NETLAYER — Expand Across APAC and Beyond | Global Network Carrier">
+<meta property="og:description" content="Netlayer is your trusted global wholesale network carrier — 200+ PoPs across 30+ markets, backed by global backbone AS24482. Cloud Connect, IP Transit, IX Peering, DC Wave, DIA, Last Mile and EPL.">
+<meta property="og:url" content="https://www.netlayer.io/">
+<meta property="og:image" content="https://www.netlayer.io/assets/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NETLAYER — Expand Across APAC and Beyond | Global Network Carrier">
+<meta name="twitter:description" content="Netlayer is your trusted global wholesale network carrier — 200+ PoPs across 30+ markets, backed by global backbone AS24482. Cloud Connect, IP Transit, IX Peering, DC Wave, DIA, Last Mile and EPL.">
+<meta name="twitter:image" content="https://www.netlayer.io/assets/og-image.svg">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Barlow+Condensed:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
-<script>
-  // Apply saved theme before paint to avoid flash
-  (function(){
-    try{
-      var t = localStorage.getItem('netlayer-theme');
-      if(t === 'light'){ document.documentElement.setAttribute('data-theme','light'); }
-    }catch(e){}
-  })();
-</script>
+<script>(function(){try{var t=localStorage.getItem('netlayer-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
 </head>
 <body>
-
-<!-- ═══ NAV ═══ -->
-<nav id="mainNav">
-  <div class="logo" onclick="goPage('home')">NETLAYER</div>
-  <ul class="nav-links">
-    <li class="has-dropdown">
-      <a onclick="goPage('products')" data-page="products">Products
-        <svg class="caret" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </a>
-      <div class="dropdown">
-        <a onclick="goPage('cloud-connect')"><span class="dd-title">Cloud Connect</span><span class="dd-desc">Private Layer 2 access to all major clouds</span></a>
-        <a onclick="goPage('ip-transit')"><span class="dd-title">IP Transit</span><span class="dd-desc">High-speed Layer 3 BGP to the global internet</span></a>
-        <a onclick="goPage('ix-peering')"><span class="dd-title">IX Peering</span><span class="dd-desc">Direct &amp; remote Internet Exchange peering</span></a>
-        <a onclick="goPage('dc-wave')"><span class="dd-title">DC Wave</span><span class="dd-desc">High-capacity DWDM metro connectivity</span></a>
-        <a onclick="goPage('dia')"><span class="dd-title">Dedicated Internet Access</span><span class="dd-desc">Uncontended, dedicated internet</span></a>
-        <a onclick="goPage('last-mile')"><span class="dd-title">Last Mile</span><span class="dd-desc">Off-net, edge &amp; remote site access</span></a>
-        <a onclick="goPage('epl')"><span class="dd-title">Ethernet Private Line</span><span class="dd-desc">Flexible point-to-point Ethernet</span></a>
-        <a class="dd-all" onclick="goPage('products')"><span class="dd-title">View all products →</span></a>
-      </div>
-    </li>
-    <li class="has-dropdown">
-      <a onclick="goPage('solutions')" data-page="solutions">Solutions
-        <svg class="caret" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </a>
-      <div class="dropdown">
-        <a onclick="goPage('solutions')"><span class="dd-title">Infrastructure Providers</span><span class="dd-desc">Resilient access to all major clouds</span></a>
-        <a onclick="goPage('solutions')"><span class="dd-title">Digital Businesses</span><span class="dd-desc">Global IP &amp; cloud connectivity</span></a>
-        <a onclick="goPage('solutions')"><span class="dd-title">Data Centres &amp; Hosting</span><span class="dd-desc">Scalable colocation interconnect</span></a>
-        <a onclick="goPage('solutions')"><span class="dd-title">Cloud &amp; Content Platforms</span><span class="dd-desc">Dedicated cloud on-ramps</span></a>
-        <a class="dd-all" onclick="goPage('solutions')"><span class="dd-title">View all solutions →</span></a>
-      </div>
-    </li>
-    <li class="has-dropdown">
-      <a onclick="goPage('network')" data-page="network">Network
-        <svg class="caret" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </a>
-      <div class="dropdown">
-        <a onclick="goPage('network')"><span class="dd-title">Global Backbone</span><span class="dd-desc">AS24482 · 200+ PoPs worldwide</span></a>
-        <a onclick="goPage('network-map')"><span class="dd-title">Network Map</span><span class="dd-desc">Interactive global PoP &amp; route map</span></a>
-        <a onclick="goPage('network')"><span class="dd-title">Peering Density</span><span class="dd-desc">10,000+ peers · #2 globally</span></a>
-      </div>
-    </li>
-    <li class="has-dropdown">
-      <a onclick="goPage('company')" data-page="company">Company
-        <svg class="caret" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </a>
-      <div class="dropdown">
-        <a onclick="goPage('company')"><span class="dd-title">About Us</span><span class="dd-desc">25+ years, rooted in APAC</span></a>
-        <a onclick="goPage('company')"><span class="dd-title">Our Team</span><span class="dd-desc">The experts behind the network</span></a>
-        <a onclick="goPage('contact')"><span class="dd-title">Contact</span><span class="dd-desc">Talk to our pre-sales team</span></a>
-      </div>
-    </li>
-  </ul>
-  <div class="nav-right">
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light and dark theme" title="Toggle theme">
-      <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
-      <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-    </button>
-    <button class="btn-demo" onclick="goPage('contact')">Get in touch</button>
-    <div class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></div>
-  </div>
-</nav>
-
-<!-- ═══════════ HOME PAGE ═══════════ -->
-<div class="page active" id="page-home">
-
-  <section class="hero">
+<a href="#main" class="skip-link">Skip to content</a>
+<div id="nav-mount"></div>
+<main id="main">
+<section class="hero">
     <div class="blue-glow"></div>
     <div class="left-amb"></div>
     <div class="blockchain-text">NETWORK</div>
@@ -97,24 +39,46 @@
     <div class="hero-bottom">
       <div class="hero-tagline">
         <h2>Expand across<span class="dim">APAC and beyond</span></h2>
+        <div class="hero-cta">
+          <a class="btn-primary" href="contact.html">Get in touch
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:8px;vertical-align:-2px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn-outline" style="margin-top:0" href="network-map.html">Explore the network</a>
+        </div>
+        <div class="hero-trust"><span class="ht-dot"></span> Trusted by infrastructure providers across 30+ markets</div>
       </div>
       <div class="hero-desc">Your trusted network carrier for global reach, local expertise, and friendly customer experience</div>
     </div>
   </section>
 
-  <div class="partners">
-    <a class="partner" href="#">AWS</a>
-    <a class="partner" href="#">Microsoft Azure</a>
-    <a class="partner" href="#">Google Cloud</a>
-    <a class="partner bybit" href="#">NTT</a>
-    <a class="partner" href="#">Tata</a>
-    <a class="partner bridge" href="#"><span class="bridge-ring">⊙</span>SGIX</a>
+  <div class="logo-eyebrow-row">
+    <div class="eyebrow">Cloud On-Ramps &amp; Carrier Partners</div>
+  </div>
+  <div class="logo-wall">
+    <div class="logo-tile" title="Amazon Web Services"><span class="wordmark">aws</span></div>
+    <div class="logo-tile" title="Microsoft Azure">
+      <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" style="height:30px"><defs><linearGradient id="az1" x1="-1032.17" x2="-1059.21" y1="145.31" y2="65.43" gradientTransform="matrix(1 0 0 -1 1075 158)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#114a8b"/><stop offset="1" stop-color="#0669bc"/></linearGradient><linearGradient id="az3" x1="-1027.16" x2="-997.48" y1="147.64" y2="68.56" gradientTransform="matrix(1 0 0 -1 1075 158)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3ccbf4"/><stop offset="1" stop-color="#2892df"/></linearGradient></defs><path fill="url(#az1)" d="M33.34 6.54h26.04l-27.03 80.1a4.15 4.15 0 0 1-3.94 2.81H8.15a4.14 4.14 0 0 1-3.93-5.47L29.4 9.38a4.15 4.15 0 0 1 3.94-2.83z"/><path fill="#0078d4" d="M71.17 60.26H29.88a1.91 1.91 0 0 0-1.3 3.31l26.53 24.76a4.17 4.17 0 0 0 2.85 1.13h23.38z"/><path fill="url(#az3)" d="M66.6 9.36a4.14 4.14 0 0 0-3.93-2.82H33.65a4.15 4.15 0 0 1 3.93 2.82l25.18 74.62a4.15 4.15 0 0 1-3.93 5.48h29.02a4.15 4.15 0 0 0 3.93-5.48z"/></svg>
+    </div>
+    <div class="logo-tile" title="Google Cloud">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -25 256 256" style="height:24px"><path fill="#EA4335" d="m170.252 56.819 22.253-22.253 1.483-9.37C153.437-11.677 88.976-7.496 52.42 33.92 42.267 45.423 34.734 59.764 30.717 74.573l7.97-1.123 44.505-7.34 3.436-3.513c19.797-21.742 53.27-24.667 76.128-6.168l7.496.39Z"/><path fill="#4285F4" d="M224.205 73.918a100.249 100.249 0 0 0-30.217-48.722l-31.232 31.232a55.515 55.515 0 0 1 20.379 44.037v5.544c15.35 0 27.797 12.445 27.797 27.796 0 15.352-12.446 27.485-27.797 27.485h-55.671l-5.466 5.934v33.34l5.466 5.231h55.67c39.93.311 72.553-31.494 72.864-71.424a72.303 72.303 0 0 0-31.793-60.453"/><path fill="#34A853" d="M71.87 205.796h55.593V161.29H71.87a27.275 27.275 0 0 1-11.399-2.498l-7.887 2.42-22.409 22.253-1.952 7.574c12.567 9.489 27.9 14.825 43.647 14.757"/><path fill="#FBBC05" d="M71.87 61.425C31.94 61.664-.237 94.228.001 134.159a72.301 72.301 0 0 0 28.222 56.88l32.248-32.246c-13.99-6.322-20.208-22.786-13.887-36.776 6.32-13.99 22.786-20.208 36.775-13.888a27.796 27.796 0 0 1 13.887 13.888l32.248-32.248A72.224 72.224 0 0 0 71.87 61.425"/></svg>
+    </div>
+    <div class="logo-tile" title="IBM Cloud">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" style="height:22px"><path fill="#1f70c1" d="M0 0v27.367h194.648V0H0zm222.226 0v27.367h277.383S471.276 0 433.75 0H222.226zm331.797 0v27.367h167.812L711.875 0H554.023zm288.125 0-9.961 27.367h166.289V0H842.148zM0 53.222v27.367h194.648V53.222H0zm222.226.039V80.59h309.57s-3.615-21.063-9.922-27.329H222.226zm331.797 0V80.59h186.211l-9.219-27.329H554.023zm268.203 0-9.219 27.329h185.469V53.261h-176.25zM55.937 106.444v27.406h84.297v-27.406H55.937zm222.227 0v27.406h84.297v-27.406h-84.297zm166.289 0v27.406h84.297s5.352-14.473 5.352-27.406h-89.649zm165.508 0v27.406h149.453l-9.961-27.406H609.961zm193.906 0-10 27.406h150.195v-27.406H803.867zm-747.93 53.262v27.367h84.297v-27.367H55.937zm222.227 0v27.367h215.312s18.012-14.042 23.75-27.367H278.164zm331.797 0v27.367h84.297v-15.234l5.352 15.234h154.414l5.742-15.234v15.234h84.297v-27.367H785.82l-8.398 23.18-8.438-23.18H609.961zM55.937 212.928v27.367h84.297v-27.367H55.937zm222.227 0v27.367h239.062c-5.739-13.281-23.75-27.367-23.75-27.367H278.164zm331.797 0v27.367h84.297v-27.367h-84.297zm99.609 0 10.195 27.367h115.781l9.688-27.367H709.57zm150.195 0v27.367h84.297v-27.367h-84.297zM55.937 266.15v27.366h84.297V266.15H55.937zm222.227 0v27.366h84.297V266.15h-84.297zm166.289 0v27.366h89.648c0-12.915-5.352-27.366-5.352-27.366h-84.296zm165.508 0v27.366h84.297V266.15h-84.297zm118.75 0 9.883 27.366h77.617l9.961-27.366h-97.461zm131.054 0v27.366h84.297V266.15h-84.297zM1.523 319.372v27.406h194.648v-27.406H1.523zm220.703 0v27.406h299.648c6.307-6.275 9.922-27.406 9.922-27.406h-309.57zm333.321 0v27.406h138.711v-27.406H555.547zm192.343 0 10.156 27.406h39.492l9.531-27.406H747.89zm111.875 0v27.406H1000v-27.406H859.765zM1.523 372.633V400h194.648v-27.367H1.523zm220.703 0v27.328H433.75c37.526 0 65.859-27.328 65.859-27.328H222.226zm333.321 0V400h138.711v-27.367H555.547zm211.601 0 9.766 27.29 1.68.038 9.922-27.328h-21.368zm92.617 0V400H1000v-27.367H859.765z"/></svg>
+    </div>
+    <div class="logo-tile" title="Oracle Cloud"><span class="wordmark" style="color:#c74634;opacity:.85">ORACLE</span></div>
+    <div class="logo-tile" title="NTT"><span class="wordmark">NTT</span></div>
+    <div class="logo-tile" title="Tata Communications"><span class="wordmark">TATA</span></div>
+    <div class="logo-tile" title="Alibaba Cloud"><span class="wordmark">Alibaba <small>Cloud</small></span></div>
+    <div class="logo-tile" title="Tencent Cloud"><span class="wordmark">Tencent</span></div>
+    <div class="logo-tile" title="SGIX"><span class="wordmark">SGIX</span></div>
+    <div class="logo-tile" title="HKIX"><span class="wordmark">HKIX</span></div>
+    <div class="logo-tile" title="Equinix"><span class="wordmark">equinix</span></div>
   </div>
 
   <div class="stats-grid">
-    <div class="stat-cell"><div class="stat-num">200+</div><div class="stat-label">Points of Presence</div></div>
-    <div class="stat-cell"><div class="stat-num">30+</div><div class="stat-label">Markets Globally</div></div>
-    <div class="stat-cell"><div class="stat-num">25+</div><div class="stat-label">Years of Experience</div></div>
+    <div class="stat-cell"><div class="stat-num" data-count="200" data-suffix="+">200+</div><div class="stat-label">Points of Presence</div></div>
+    <div class="stat-cell"><div class="stat-num" data-count="30" data-suffix="+">30+</div><div class="stat-label">Markets Globally</div></div>
+    <div class="stat-cell"><div class="stat-num" data-count="25" data-suffix="+">25+</div><div class="stat-label">Years of Experience</div></div>
   </div>
 
   <div class="marquee-wrap">
@@ -140,7 +104,7 @@
         <div class="eyebrow">Explore Our Global Network</div>
         <div class="section-heading">Expand with confidence.</div>
         <p class="section-body">Our 200+ Points of Presence across 30+ markets connect you to new opportunities, and to our resilient global internet backbone — AS24482. As Asia Pacific's friendly global wholesale carrier, we provide fully customisable, scalable and low-latency network solutions.</p>
-        <a class="btn-outline" onclick="goPage('network')">Explore Our Network</a>
+        <a class="btn-outline" href="network.html">Explore Our Network</a>
       </div>
       <div class="orb-wrap">
         <div class="orbit"><div class="o-dot"></div></div>
@@ -170,37 +134,37 @@
     <div class="section-heading-sm" style="max-width:560px">A tailored product suite that adapts to your business needs.</div>
   </section>
   <div class="cards-grid">
-    <div class="card" onclick="goPage('cloud-connect')" style="cursor:pointer">
+    <div class="card" href="cloud-connect.html" style="cursor:pointer">
       <div class="card-num">01</div>
       <div class="card-tag-row"><span class="card-tag">Layer 2</span><span class="card-tag">Multi-cloud</span><span class="card-tag">Private</span></div>
       <div class="card-title">Cloud Connect</div>
       <div class="card-desc">Direct and private Layer 2 access to all major clouds — AWS, Azure, Google, IBM, Oracle, Alibaba and Tencent — via our global backbone.</div>
     </div>
-    <div class="card" onclick="goPage('ip-transit')" style="cursor:pointer">
+    <div class="card" href="ip-transit.html" style="cursor:pointer">
       <div class="card-num">02</div>
       <div class="card-tag-row"><span class="card-tag">BGP</span><span class="card-tag">Layer 3</span><span class="card-tag">IPv4/IPv6</span></div>
       <div class="card-title">IP Transit</div>
       <div class="card-desc">High-speed Layer 3 BGP access to the global internet. 350Gbps+ of daily traffic, 10,000+ direct peers, ranked #2 most peered globally.</div>
     </div>
-    <div class="card" onclick="goPage('ix-peering')" style="cursor:pointer">
+    <div class="card" href="ix-peering.html" style="cursor:pointer">
       <div class="card-num">03</div>
       <div class="card-tag-row"><span class="card-tag">Direct</span><span class="card-tag">Remote</span><span class="card-tag">IX</span></div>
       <div class="card-title">IX Peering</div>
       <div class="card-desc">Peer everywhere, from anywhere, with direct or remote access to the world's most popular Internet Exchanges.</div>
     </div>
-    <div class="card" onclick="goPage('dc-wave')" style="cursor:pointer">
+    <div class="card" href="dc-wave.html" style="cursor:pointer">
       <div class="card-num">04</div>
       <div class="card-tag-row"><span class="card-tag">DWDM</span><span class="card-tag">Metro</span><span class="card-tag">High-capacity</span></div>
       <div class="card-title">DC Wave</div>
       <div class="card-desc">High-capacity DWDM metro connectivity between data centres, engineered for demanding, bandwidth-intensive workloads.</div>
     </div>
-    <div class="card" onclick="goPage('dia')" style="cursor:pointer">
+    <div class="card" href="dia.html" style="cursor:pointer">
       <div class="card-num">05</div>
       <div class="card-tag-row"><span class="card-tag">Dedicated</span><span class="card-tag">Uncontended</span><span class="card-tag">SLA</span></div>
       <div class="card-title">Dedicated Internet Access</div>
       <div class="card-desc">End the battle for bandwidth with dedicated, uncontended access to the internet — backed by carrier-grade SLAs.</div>
     </div>
-    <div class="card" onclick="goPage('last-mile')" style="cursor:pointer">
+    <div class="card" href="last-mile.html" style="cursor:pointer">
       <div class="card-num">06</div>
       <div class="card-tag-row"><span class="card-tag">Off-net</span><span class="card-tag">Edge</span><span class="card-tag">Access</span></div>
       <div class="card-title">Last Mile</div>
@@ -272,950 +236,47 @@
     </div>
   </div>
 
+  <section class="section-sm">
+    <div class="eyebrow">Compliance &amp; Standards</div>
+    <div class="section-heading-sm">Built to enterprise-grade standards.</div>
+  </section>
+  <div class="trust-strip">
+    <div class="trust-cell">
+      <div class="tb-ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+      <div class="tb-name">ISO 27001</div>
+      <div class="tb-desc">Information security management certified across our operations.</div>
+    </div>
+    <div class="trust-cell">
+      <div class="tb-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg></div>
+      <div class="tb-name">MANRS</div>
+      <div class="tb-desc">Routing security compliant — RPKI, IRR filtering and anti-spoofing.</div>
+    </div>
+    <div class="trust-cell">
+      <div class="tb-ic"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+      <div class="tb-name">PCI-DSS Ready</div>
+      <div class="tb-desc">Network controls aligned to payment-grade security requirements.</div>
+    </div>
+    <div class="trust-cell">
+      <div class="tb-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 3"/></svg></div>
+      <div class="tb-name">99.99% SLA</div>
+      <div class="tb-desc">Carrier-grade availability backed by 24/7 NOC and proactive monitoring.</div>
+    </div>
+  </div>
+
   <div class="cta-banner">
     <div>
       <div class="cta-heading">Ready to expand?<br><em>Connect to new markets and opportunities.</em></div>
       <p class="cta-sub">Our technical pre-sales team is on hand to support your requirements.</p>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:14px;flex-shrink:0;position:relative;z-index:1">
-      <button class="btn-primary" onclick="goPage('contact')">Get in touch</button>
+      <a class="btn-primary" href="contact.html">Get in touch</a>
       <p style="font-size:11px;color:rgba(var(--ink),.4);letter-spacing:.08em;text-transform:uppercase">Singapore · London · 30+ Markets</p>
     </div>
   </div>
 
   <div class="footer-slot"></div>
-</div><!-- /page-home -->
-
-<!-- ═══════════ PRODUCTS OVERVIEW ═══════════ -->
-<div class="page" id="page-products">
-  <div class="inner-hero">
-    <div class="page-label">Products</div>
-    <div class="page-title">A network suite<br>built for you.</div>
-    <p class="page-sub">Discover our tailored product suite designed to craft a network infrastructure that adapts to your unique business needs — fully customisable, scalable and low-latency.</p>
-  </div>
-
-  <div class="cards-grid" style="border-top:none">
-    <div class="card" onclick="goPage('cloud-connect')" style="padding-top:64px;cursor:pointer">
-      <div class="card-num">01</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
-      <div class="card-tag-row"><span class="card-tag">Layer 2</span><span class="card-tag">Multi-cloud</span></div>
-      <div class="card-title">Cloud Connect</div>
-      <div class="card-desc">Direct and private Layer 2 access to a global ecosystem of cloud providers via our backbone. Scalable from 100Mbps to 10Gbps+.</div>
-    </div>
-    <div class="card" onclick="goPage('ip-transit')" style="padding-top:64px;cursor:pointer">
-      <div class="card-num">02</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-      <div class="card-tag-row"><span class="card-tag">BGP</span><span class="card-tag">Layer 3</span></div>
-      <div class="card-title">IP Transit</div>
-      <div class="card-desc">Layer 3 BGP into our Tier 2 backbone. 350Gbps+ daily traffic, 10,000+ peers, ranked #2 most peered globally.</div>
-    </div>
-    <div class="card" onclick="goPage('ix-peering')" style="padding-top:64px;cursor:pointer">
-      <div class="card-num">03</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 6.5 9.5 10M17 6.5 14.5 10M7 17.5 9.5 14M17 17.5 14.5 14"/></svg></div>
-      <div class="card-tag-row"><span class="card-tag">Direct</span><span class="card-tag">Remote</span></div>
-      <div class="card-title">IX Peering</div>
-      <div class="card-desc">Peer everywhere, from anywhere, with direct or remote access to the world's most popular Internet Exchanges.</div>
-    </div>
-    <div class="card" onclick="goPage('dc-wave')" style="padding-top:64px;cursor:pointer">
-      <div class="card-num">04</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M2 12h4l3 8 4-16 3 8h4"/></svg></div>
-      <div class="card-tag-row"><span class="card-tag">DWDM</span><span class="card-tag">Metro</span></div>
-      <div class="card-title">DC Wave</div>
-      <div class="card-desc">High-capacity DWDM metro connectivity between data centres, engineered for bandwidth-intensive workloads.</div>
-    </div>
-    <div class="card" onclick="goPage('dia')" style="padding-top:64px;cursor:pointer">
-      <div class="card-num">05</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
-      <div class="card-tag-row"><span class="card-tag">Dedicated</span><span class="card-tag">SLA</span></div>
-      <div class="card-title">Dedicated Internet Access</div>
-      <div class="card-desc">End the battle for bandwidth with dedicated, uncontended access to the internet, backed by carrier-grade SLAs.</div>
-    </div>
-    <div class="card" onclick="goPage('last-mile')" style="padding-top:64px;cursor:pointer">
-      <div class="card-num">06</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><polyline points="2 7 12 13 22 7"/></svg></div>
-      <div class="card-tag-row"><span class="card-tag">Off-net</span><span class="card-tag">Edge</span></div>
-      <div class="card-title">Last Mile</div>
-      <div class="card-desc">Connect off-net buildings, remote offices, or edge locations with seamless, fully managed Last Mile connectivity.</div>
-    </div>
-    <div class="card" onclick="goPage('epl')" style="padding-top:64px;cursor:pointer">
-      <div class="card-num">07</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></div>
-      <div class="card-tag-row"><span class="card-tag">Point-to-Point</span><span class="card-tag">Metro</span></div>
-      <div class="card-title">Ethernet Private Line</div>
-      <div class="card-desc">Flexible point-to-point Ethernet. Effortlessly scale bandwidth up and down across the metro region.</div>
-    </div>
-  </div>
-
-  <div class="cta-banner">
-    <div><div class="cta-heading">Build your<br><em>custom solution.</em></div></div>
-    <button class="btn-primary" onclick="goPage('contact')" style="position:relative;z-index:1">Request a Product Sheet</button>
-  </div>
-  <div class="footer-slot"></div>
-</div><!-- /page-products -->
-
-<!-- ═══════════ CLOUD CONNECT ═══════════ -->
-<div class="page" id="page-cloud-connect">
-  <div class="inner-hero">
-    <div class="page-label">Products / Cloud Connect</div>
-    <div class="page-title">Sky-high performance<br>in the cloud.</div>
-    <p class="page-sub">Leverage the full capacity of the Netlayer global network for fast, secure, seamless cloud connectivity — your direct and private highway to the cloud.</p>
-    <div style="display:flex;gap:16px;margin-top:36px;position:relative;z-index:1;flex-wrap:wrap">
-      <button class="btn-primary" onclick="goPage('contact')">Download Product Sheet</button>
-      <button class="btn-outline" style="margin-top:0" onclick="goPage('contact')">Contact us</button>
-    </div>
-  </div>
-  <div class="prod-highlights">
-    <div class="ph-cell"><div class="ph-title">All <span class="accent">Major</span> Clouds</div><div class="ph-desc">Extensive access to AWS, Azure, Google, IBM, Oracle, Alibaba and Tencent.</div></div>
-    <div class="ph-cell"><div class="ph-title">30+ <span class="accent">Markets</span></div><div class="ph-desc">Cloud connectivity to numerous local addresses via strategic regional partners.</div></div>
-    <div class="ph-cell"><div class="ph-title">100M – <span class="accent">10G+</span></div><div class="ph-desc">Scalable bandwidth options available, for maximum flexibility.</div></div>
-  </div>
-  <section class="section">
-    <div class="two-col">
-      <div>
-        <div class="eyebrow">What is Cloud Connect?</div>
-        <div class="section-heading">A private highway to the cloud.</div>
-        <p class="section-body">Cloud Connect provides direct and private Layer 2 access to a global ecosystem of cloud providers via our global backbone, delivering consistent network performance. Access our ecosystem for hybrid multi-cloud architectures, and enjoy secure connections that you control.</p>
-      </div>
-      <div>
-        <div class="eyebrow">Why choose Netlayer</div>
-        <ul class="benefit-list">
-          <li>Say goodbye to the hassle of managing multiple cloud services</li>
-          <li>High-performance connections direct to top cloud providers</li>
-          <li>Hybrid infrastructure that blends on-premise and cloud</li>
-          <li>Customisable paths with multiple backbone &amp; on-ramp options</li>
-          <li>Carrier-grade infrastructure that scales as you grow</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="section-sm"><div class="eyebrow">Who is it for?</div><div class="section-heading-sm">Built for cloud-first businesses.</div></section>
-  <div class="cards-grid">
-    <div class="card"><div class="card-title">Infrastructure Providers</div><div class="card-desc">Dedicated, secure access to all major cloud providers or regions, enabling local infrastructure resiliency.</div></div>
-    <div class="card"><div class="card-title">Digital Businesses</div><div class="card-desc">Integrate secure, dedicated cloud access for local users, or enable multi-cloud for cloud-native enterprises.</div></div>
-    <div class="card"><div class="card-title">Cloud &amp; Content Platforms</div><div class="card-desc">Empower interconnected cloud and data centre architectures via dedicated cloud on-ramps.</div></div>
-  </div>
-
-  <!-- HOW IT WORKS -->
-  <section class="section-sm"><div class="eyebrow">How It Works</div><div class="section-heading-sm">Three steps to the cloud.</div></section>
-  <div class="prod-highlights">
-    <div class="ph-cell"><div class="card-num" style="margin-bottom:18px">STEP 01</div><div class="ph-title" style="font-size:22px">Connect Once</div><div class="ph-desc">A single physical or virtual port into the Netlayer fabric gives you reach to every supported cloud on-ramp.</div></div>
-    <div class="ph-cell"><div class="card-num" style="margin-bottom:18px">STEP 02</div><div class="ph-title" style="font-size:22px">Provision Virtual Circuits</div><div class="ph-desc">Spin up dedicated Layer 2 connections to AWS, Azure, Google and more — each privately isolated from the public internet.</div></div>
-    <div class="ph-cell"><div class="card-num" style="margin-bottom:18px">STEP 03</div><div class="ph-title" style="font-size:22px">Scale On Demand</div><div class="ph-desc">Add regions, adjust bandwidth, or build multi-cloud architectures without new cross-connects or hardware.</div></div>
-  </div>
-
-  <!-- TECH SPECS -->
-  <section class="section">
-    <div class="eyebrow">Technical Specifications</div>
-    <div class="section-heading" style="margin-bottom:48px">The detail that matters.</div>
-    <div class="spec-table">
-      <div class="spec-row"><div class="spec-k">Connectivity</div><div class="spec-v"><b>Dedicated Layer 2</b> private circuits — no traffic traverses the public internet.</div></div>
-      <div class="spec-row"><div class="spec-k">Cloud On-Ramps</div><div class="spec-v">AWS Direct Connect, Azure ExpressRoute, Google Cloud Interconnect, Oracle, IBM, Alibaba and Tencent.</div></div>
-      <div class="spec-row"><div class="spec-k">Bandwidth</div><div class="spec-v"><b>100Mbps to 10Gbps+</b>, adjustable on demand with no physical re-provisioning.</div></div>
-      <div class="spec-row"><div class="spec-k">Architecture</div><div class="spec-v">Single-cloud, hybrid, or full multi-cloud — with one port serving many virtual circuits.</div></div>
-      <div class="spec-row"><div class="spec-k">Resilience</div><div class="spec-v">Diverse and protected on-ramp options in major markets for active/active or active/standby designs.</div></div>
-      <div class="spec-row"><div class="spec-k">SLA</div><div class="spec-v"><b>99.99% availability</b> with 24/7 NOC monitoring and carrier-grade fault management.</div></div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section">
-    <div class="eyebrow">Frequently Asked</div>
-    <div class="section-heading-sm" style="margin-bottom:40px">Cloud Connect questions, answered.</div>
-    <div class="faq">
-      <div class="faq-item"><button class="faq-q">Which clouds can I reach? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">All major providers — AWS, Microsoft Azure, Google Cloud, Oracle Cloud, IBM Cloud, Alibaba Cloud and Tencent Cloud — plus regional clouds via our cloud-fabric partners.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Is my traffic isolated from the public internet? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Yes. Cloud Connect uses dedicated private Layer 2 circuits, so your data never traverses the public internet — improving both security and performance consistency.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Can I connect to multiple clouds at once? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">A single port into our fabric can serve many virtual circuits, letting you build hybrid and multi-cloud architectures without additional cross-connects.</div></div></div>
-      <div class="faq-item"><button class="faq-q">How quickly can bandwidth be changed? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Bandwidth is adjustable on demand within your provisioned port capacity, with no physical re-provisioning required.</div></div></div>
-    </div>
-  </section>
-
-  <div class="cta-banner"><div><div class="cta-heading">Bring the cloud<br><em>to you.</em></div></div><button class="btn-primary" onclick="goPage('contact')" style="position:relative;z-index:1">Get in touch</button></div>
-  <div class="footer-slot"></div>
-</div><!-- /page-cloud-connect -->
-
-<!-- ═══════════ IP TRANSIT ═══════════ -->
-<div class="page" id="page-ip-transit">
-  <div class="inner-hero">
-    <div class="page-label">Products / IP Transit</div>
-    <div class="page-title">High-speed access to<br>the global internet.</div>
-    <p class="page-sub">Gain control and flexibility over your IP traffic with one of the world's largest IP backbones — Layer 3 BGP connectivity with unmatched coverage and reliability.</p>
-    <div style="display:flex;gap:16px;margin-top:36px;position:relative;z-index:1;flex-wrap:wrap">
-      <button class="btn-primary" onclick="goPage('contact')">Download Product Sheet</button>
-      <button class="btn-outline" style="margin-top:0" onclick="goPage('contact')">Contact us</button>
-    </div>
-  </div>
-  <div class="prod-highlights">
-    <div class="ph-cell"><div class="ph-title">350<span class="accent">Gbps+</span></div><div class="ph-desc">Of daily growing IP traffic we support on our global network.</div></div>
-    <div class="ph-cell"><div class="ph-title">10,000+ <span class="accent">Peers</span></div><div class="ph-desc">Direct peers across 100+ Internet Exchanges worldwide.</div></div>
-    <div class="ph-cell"><div class="ph-title">Ranked <span class="accent">#2</span></div><div class="ph-desc">Consistently top 3 with Hurricane Electric, top 5 with bgp.tools.</div></div>
-  </div>
-  <section class="section">
-    <div class="two-col">
-      <div>
-        <div class="eyebrow">What is IP Transit?</div>
-        <div class="section-heading">Layer 3 BGP, done right.</div>
-        <p class="section-body">Our IP Transit is a Layer 3 BGP connection into our Tier 2 IP backbone, enabling scalable access to the global internet. Strategically deployed across 30+ markets, we provide the best blend of IP routes for high-performance access, with full control through our global BGP communities.</p>
-      </div>
-      <div>
-        <div class="eyebrow">Why choose Netlayer</div>
-        <ul class="benefit-list">
-          <li>Available across 200+ PoPs with 100GE support in major markets</li>
-          <li>Strong APAC density including routing options in China</li>
-          <li>Powered by partnerships with NTT, Tata, SGIX and HKIX</li>
-          <li>Global BGP communities for full traffic control</li>
-          <li>Burstable bandwidth options in select markets</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="section-sm"><div class="eyebrow">Who is it for?</div><div class="section-heading-sm">For networks that need reliable reach.</div></section>
-  <div class="cards-grid">
-    <div class="card"><div class="card-title">Infrastructure Providers</div><div class="card-desc">Resilient, scalable IP infrastructure with zero congestion and direct access to global resources.</div></div>
-    <div class="card"><div class="card-title">Digital Businesses</div><div class="card-desc">Establish a presence for your ASN and IP routes with a reliable network foundation for growth.</div></div>
-    <div class="card"><div class="card-title">Data Centres &amp; Hosting</div><div class="card-desc">Scalable, secure internet connectivity that boosts location attractiveness without network deployment.</div></div>
-  </div>
-
-  <!-- HOW IT WORKS -->
-  <section class="section-sm"><div class="eyebrow">How It Works</div><div class="section-heading-sm">From order to advertised routes.</div></section>
-  <div class="prod-highlights">
-    <div class="ph-cell"><div class="card-num" style="margin-bottom:18px">STEP 01</div><div class="ph-title" style="font-size:22px">Provision the Port</div><div class="ph-desc">We turn up a 1G, 10G or 100G port at your chosen PoP or over a Last Mile tail, with diverse options available.</div></div>
-    <div class="ph-cell"><div class="card-num" style="margin-bottom:18px">STEP 02</div><div class="ph-title" style="font-size:22px">Establish BGP</div><div class="ph-desc">We configure an eBGP session to your ASN, apply prefix filters, and validate against IRR and RPKI ROAs.</div></div>
-    <div class="ph-cell"><div class="card-num" style="margin-bottom:18px">STEP 03</div><div class="ph-title" style="font-size:22px">Advertise &amp; Optimise</div><div class="ph-desc">Your prefixes go live with full BGP community control, letting you steer traffic and tune the route mix.</div></div>
-  </div>
-
-  <!-- TECH SPECS -->
-  <section class="section">
-    <div class="eyebrow">Technical Specifications</div>
-    <div class="section-heading" style="margin-bottom:48px">The detail that matters.</div>
-    <div class="spec-table">
-      <div class="spec-row"><div class="spec-k">Port Options</div><div class="spec-v"><b>1GE, 10GE, 100GE</b> — single or LAG, with diverse/protected handoff available in major PoPs.</div></div>
-      <div class="spec-row"><div class="spec-k">Protocol</div><div class="spec-v">eBGP (IPv4 &amp; IPv6 dual-stack). Multi-hop and BFD supported. Full table or partial/default routes on request.</div></div>
-      <div class="spec-row"><div class="spec-k">Routing Security</div><div class="spec-v"><b>RPKI ROA validation</b>, IRR-based prefix filtering, and max-prefix limits applied on every session by default.</div></div>
-      <div class="spec-row"><div class="spec-k">Traffic Control</div><div class="spec-v">Granular BGP communities for geographic and per-peer steering, plus blackhole community for DDoS mitigation.</div></div>
-      <div class="spec-row"><div class="spec-k">Commit &amp; Burst</div><div class="spec-v">Fixed CIR or 95th-percentile billing. Burstable bandwidth available in select markets.</div></div>
-      <div class="spec-row"><div class="spec-k">SLA</div><div class="spec-v"><b>99.99% availability</b>, 24/7 NOC, proactive monitoring, and guaranteed mean-time-to-repair targets.</div></div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section">
-    <div class="eyebrow">Frequently Asked</div>
-    <div class="section-heading-sm" style="margin-bottom:40px">IP Transit questions, answered.</div>
-    <div class="faq">
-      <div class="faq-item"><button class="faq-q">Do you provide a full BGP table? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Yes. We offer the full global routing table by default, or partial and default-only routes on request — ideal for edge routers with limited FIB capacity.</div></div></div>
-      <div class="faq-item"><button class="faq-q">What is the typical provisioning time? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">On-net ports in major PoPs are typically delivered in 3–10 business days. Where a Last Mile tail is required, timelines depend on the local access provider and we scope this during pre-sales.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Do you support RPKI and IRR filtering? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Absolutely. RPKI ROV is enforced and we build prefix filters from IRR data. This is part of our commitment to MANRS-aligned routing hygiene.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Can I burst above my committed rate? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">In select markets, yes. We offer 95th-percentile billing and burstable commits so you only pay for what you use while retaining headroom for traffic spikes.</div></div></div>
-      <div class="faq-item"><button class="faq-q">How do you handle DDoS attacks? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">We provide a remote-triggered blackhole (RTBH) community so you can null-route attacked prefixes instantly. Volumetric scrubbing options can be added in supported markets.</div></div></div>
-    </div>
-  </section>
-
-  <div class="cta-banner"><div><div class="cta-heading">Full control.<br><em>Full burstability.</em></div></div><button class="btn-primary" onclick="goPage('contact')" style="position:relative;z-index:1">Get in touch</button></div>
-  <div class="footer-slot"></div>
-</div><!-- /page-ip-transit -->
-
-<!-- ═══════════ IX PEERING ═══════════ -->
-<div class="page" id="page-ix-peering">
-  <div class="inner-hero">
-    <div class="page-label">Products / IX Peering</div>
-    <div class="page-title">Peer everywhere,<br>from anywhere.</div>
-    <p class="page-sub">Direct or remote access to the world's most popular Internet Exchanges — reduce latency, improve performance, and control your routing across the globe.</p>
-    <div style="display:flex;gap:16px;margin-top:36px;position:relative;z-index:1;flex-wrap:wrap">
-      <button class="btn-primary" onclick="goPage('contact')">Download Product Sheet</button>
-      <button class="btn-outline" style="margin-top:0" onclick="goPage('contact')">Contact us</button>
-    </div>
-  </div>
-  <div class="prod-highlights">
-    <div class="ph-cell"><div class="ph-title">100+ <span class="accent">IXs</span></div><div class="ph-desc">Reach across the world's most popular Internet Exchanges.</div></div>
-    <div class="ph-cell"><div class="ph-title">Direct &amp; <span class="accent">Remote</span></div><div class="ph-desc">Peer from your location or remotely via our backbone.</div></div>
-    <div class="ph-cell"><div class="ph-title">APAC <span class="accent">Density</span></div><div class="ph-desc">Partnerships with SGIX, HKIX, NTT and Tata.</div></div>
-  </div>
-  <section class="section">
-    <div class="two-col">
-      <div>
-        <div class="eyebrow">What is IX Peering?</div>
-        <div class="section-heading">Closer to the content.</div>
-        <p class="section-body">Remote IX peering lets you access major Internet Exchanges without a physical presence at each one. Connect once to the Netlayer backbone and reach exchanges across APAC and beyond — lowering latency and improving end-user experience while keeping full control of your peering strategy.</p>
-      </div>
-      <div>
-        <div class="eyebrow">Why choose Netlayer</div>
-        <ul class="benefit-list">
-          <li>Access the most popular IXs without local hardware</li>
-          <li>Reduce transit costs by peering directly with networks</li>
-          <li>Lower latency to content and eyeball networks</li>
-          <li>Backed by deep APAC exchange partnerships</li>
-          <li>Single connection, multiple exchange reach</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="section-sm"><div class="eyebrow">Who is it for?</div><div class="section-heading-sm">For networks chasing performance.</div></section>
-  <div class="cards-grid">
-    <div class="card"><div class="card-title">ISPs &amp; Eyeball Networks</div><div class="card-desc">Lower transit spend and improve subscriber experience by peering directly with content and cloud networks.</div></div>
-    <div class="card"><div class="card-title">Content &amp; CDN Operators</div><div class="card-desc">Get closer to your audience across APAC exchanges without deploying hardware in every market.</div></div>
-    <div class="card"><div class="card-title">Enterprises &amp; Clouds</div><div class="card-desc">Reach key regional networks through a single backbone connection for predictable, low-latency delivery.</div></div>
-  </div>
-
-  <!-- TECH SPECS -->
-  <section class="section">
-    <div class="eyebrow">Technical Specifications</div>
-    <div class="section-heading" style="margin-bottom:48px">The detail that matters.</div>
-    <div class="spec-table">
-      <div class="spec-row"><div class="spec-k">Exchange Reach</div><div class="spec-v"><b>100+ Internet Exchanges</b> worldwide, including SGIX, HKIX, Equinix, DE-CIX and AMS-IX.</div></div>
-      <div class="spec-row"><div class="spec-k">Access Modes</div><div class="spec-v">Direct peering at on-net exchanges, or <b>remote peering</b> over our backbone from anywhere on the network.</div></div>
-      <div class="spec-row"><div class="spec-k">Session Types</div><div class="spec-v">Bilateral peering and route-server (multilateral) peering, IPv4 and IPv6.</div></div>
-      <div class="spec-row"><div class="spec-k">Port Options</div><div class="spec-v">1GE, 10GE and 100GE remote peering ports, scalable as your peering traffic grows.</div></div>
-      <div class="spec-row"><div class="spec-k">APAC Density</div><div class="spec-v">Deep regional reach via partnerships with NTT, Tata, SGIX and HKIX.</div></div>
-      <div class="spec-row"><div class="spec-k">SLA</div><div class="spec-v"><b>99.99% port availability</b> with 24/7 NOC support and proactive monitoring.</div></div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section">
-    <div class="eyebrow">Frequently Asked</div>
-    <div class="section-heading-sm" style="margin-bottom:40px">IX Peering questions, answered.</div>
-    <div class="faq">
-      <div class="faq-item"><button class="faq-q">What is remote peering? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Remote peering lets you join an Internet Exchange without deploying hardware at that exchange. You connect once to the Netlayer backbone and we extend your reach to the IX over our network.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Which exchanges do you support? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Over 100 IXs globally, with particularly deep coverage in APAC including SGIX and HKIX, plus major European and North American exchanges.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Will peering reduce my transit costs? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Typically yes. Peering offloads traffic that would otherwise use paid transit, and often improves latency to the destination network at the same time.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Do you support route servers? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Yes — both bilateral sessions and multilateral route-server peering are supported, for IPv4 and IPv6.</div></div></div>
-    </div>
-  </section>
-
-  <div class="cta-banner"><div><div class="cta-heading">Peer smarter,<br><em>not harder.</em></div></div><button class="btn-primary" onclick="goPage('contact')" style="position:relative;z-index:1">Get in touch</button></div>
-  <div class="footer-slot"></div>
-</div><!-- /page-ix-peering -->
-
-<!-- ═══════════ DC WAVE ═══════════ -->
-<div class="page" id="page-dc-wave">
-  <div class="inner-hero">
-    <div class="page-label">Products / DC Wave</div>
-    <div class="page-title">High-capacity metro,<br>wavelength fast.</div>
-    <p class="page-sub">Experience high-capacity DWDM metro connectivity between data centres — dedicated wavelengths engineered for the most demanding, bandwidth-intensive workloads.</p>
-    <div style="display:flex;gap:16px;margin-top:36px;position:relative;z-index:1;flex-wrap:wrap">
-      <button class="btn-primary" onclick="goPage('contact')">Download Product Sheet</button>
-      <button class="btn-outline" style="margin-top:0" onclick="goPage('contact')">Contact us</button>
-    </div>
-  </div>
-  <div class="prod-highlights">
-    <div class="ph-cell"><div class="ph-title">Up to <span class="accent">400G</span></div><div class="ph-desc">High-capacity wavelengths for data-intensive workloads.</div></div>
-    <div class="ph-cell"><div class="ph-title">DWDM <span class="accent">Metro</span></div><div class="ph-desc">Dense wavelength division multiplexing across metro rings.</div></div>
-    <div class="ph-cell"><div class="ph-title">Carrier <span class="accent">Grade</span></div><div class="ph-desc">Built-in resilience with protected and diverse routing.</div></div>
-  </div>
-  <section class="section">
-    <div class="two-col">
-      <div>
-        <div class="eyebrow">What is DC Wave?</div>
-        <div class="section-heading">Data centre to data centre.</div>
-        <p class="section-body">DC Wave delivers dedicated, high-capacity DWDM wavelengths between data centres across the metro region. Ideal for storage replication, backup, and high-throughput inter-DC traffic, it provides predictable, low-latency performance with the protection and diversity your workloads demand.</p>
-      </div>
-      <div>
-        <div class="eyebrow">Why choose Netlayer</div>
-        <ul class="benefit-list">
-          <li>Dedicated wavelengths, not shared capacity</li>
-          <li>Scales to 400G for the most demanding workloads</li>
-          <li>Protected and diverse routing for resilience</li>
-          <li>Predictable, low-latency metro performance</li>
-          <li>Ideal for replication, backup and DR</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="section-sm"><div class="eyebrow">Who is it for?</div><div class="section-heading-sm">For data-intensive operations.</div></section>
-  <div class="cards-grid">
-    <div class="card"><div class="card-title">Data Centre Operators</div><div class="card-desc">Interconnect facilities across a metro with dedicated wavelengths for storage and compute fabric extension.</div></div>
-    <div class="card"><div class="card-title">Cloud &amp; Content Platforms</div><div class="card-desc">Move large volumes between availability zones with predictable, low-latency, high-capacity links.</div></div>
-    <div class="card"><div class="card-title">Enterprises &amp; Finance</div><div class="card-desc">Synchronous replication and disaster recovery between sites where latency and integrity are critical.</div></div>
-  </div>
-
-  <!-- TECH SPECS -->
-  <section class="section">
-    <div class="eyebrow">Technical Specifications</div>
-    <div class="section-heading" style="margin-bottom:48px">The detail that matters.</div>
-    <div class="spec-table">
-      <div class="spec-row"><div class="spec-k">Technology</div><div class="spec-v"><b>DWDM</b> (Dense Wavelength Division Multiplexing) over metro fibre rings.</div></div>
-      <div class="spec-row"><div class="spec-k">Capacity</div><div class="spec-v">Dedicated wavelengths from <b>10G to 400G</b> per lambda, with multiple lambdas per fibre pair.</div></div>
-      <div class="spec-row"><div class="spec-k">Client Interfaces</div><div class="spec-v">10GE, 100GE and 400GE handoffs, plus OTU and Fibre Channel for storage extension.</div></div>
-      <div class="spec-row"><div class="spec-k">Protection</div><div class="spec-v">Optical protection switching with diverse fibre paths for sub-50ms failover.</div></div>
-      <div class="spec-row"><div class="spec-k">Latency</div><div class="spec-v">Deterministic, ultra-low metro latency — ideal for synchronous replication.</div></div>
-      <div class="spec-row"><div class="spec-k">SLA</div><div class="spec-v"><b>99.99% availability</b> with protected routing and 24/7 NOC monitoring.</div></div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section">
-    <div class="eyebrow">Frequently Asked</div>
-    <div class="section-heading-sm" style="margin-bottom:40px">DC Wave questions, answered.</div>
-    <div class="faq">
-      <div class="faq-item"><button class="faq-q">What capacities are available? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Dedicated wavelengths from 10G up to 400G per lambda, with the ability to light multiple lambdas on the same fibre pair as you scale.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Is the wavelength dedicated to me? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Yes — DC Wave delivers a dedicated optical wavelength, not shared packet capacity, so performance is deterministic and uncontended.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Can it carry Fibre Channel for storage? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">It can. Alongside Ethernet handoffs, we support OTU and Fibre Channel interfaces for storage-area-network and replication use cases.</div></div></div>
-      <div class="faq-item"><button class="faq-q">How is the service protected? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">We offer optical protection switching over diverse fibre paths, delivering sub-50ms failover for mission-critical inter-DC traffic.</div></div></div>
-    </div>
-  </section>
-
-  <div class="cta-banner"><div><div class="cta-heading">Move data<br><em>at the speed of light.</em></div></div><button class="btn-primary" onclick="goPage('contact')" style="position:relative;z-index:1">Get in touch</button></div>
-  <div class="footer-slot"></div>
-</div><!-- /page-dc-wave -->
-
-<!-- ═══════════ DIA ═══════════ -->
-<div class="page" id="page-dia">
-  <div class="inner-hero">
-    <div class="page-label">Products / Dedicated Internet Access</div>
-    <div class="page-title">End the battle<br>for bandwidth.</div>
-    <p class="page-sub">Dedicated, uncontended access to the internet with symmetric speeds and carrier-grade SLAs — for businesses that can't afford to share.</p>
-    <div style="display:flex;gap:16px;margin-top:36px;position:relative;z-index:1;flex-wrap:wrap">
-      <button class="btn-primary" onclick="goPage('contact')">Download Product Sheet</button>
-      <button class="btn-outline" style="margin-top:0" onclick="goPage('contact')">Contact us</button>
-    </div>
-  </div>
-  <div class="prod-highlights">
-    <div class="ph-cell"><div class="ph-title">100% <span class="accent">Dedicated</span></div><div class="ph-desc">Uncontended bandwidth that's yours alone.</div></div>
-    <div class="ph-cell"><div class="ph-title">Symmetric <span class="accent">Speeds</span></div><div class="ph-desc">Equal upload and download for demanding apps.</div></div>
-    <div class="ph-cell"><div class="ph-title">Carrier <span class="accent">SLA</span></div><div class="ph-desc">Backed by comprehensive, enforceable SLAs.</div></div>
-  </div>
-  <section class="section">
-    <div class="two-col">
-      <div>
-        <div class="eyebrow">What is DIA?</div>
-        <div class="section-heading">Bandwidth you can count on.</div>
-        <p class="section-body">Dedicated Internet Access provides uncontended, symmetric connectivity into our global backbone. Unlike shared broadband, your bandwidth is guaranteed — delivering consistent performance for cloud apps, voice, video and mission-critical operations, underpinned by carrier-grade SLAs.</p>
-      </div>
-      <div>
-        <div class="eyebrow">Why choose Netlayer</div>
-        <ul class="benefit-list">
-          <li>Guaranteed, uncontended bandwidth</li>
-          <li>Symmetric upload and download speeds</li>
-          <li>Carrier-grade SLA with proactive monitoring</li>
-          <li>Available across 200+ PoPs and Last Mile</li>
-          <li>Scalable as your demand grows</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <div class="cta-banner"><div><div class="cta-heading">Dedicated.<br><em>Uncontended. Reliable.</em></div></div><button class="btn-primary" onclick="goPage('contact')" style="position:relative;z-index:1">Get in touch</button></div>
-  <section class="section-sm" style="border-top:1px solid var(--line)"><div class="eyebrow">Who is it for?</div><div class="section-heading-sm">For bandwidth that can't wait.</div></section>
-  <div class="cards-grid">
-    <div class="card"><div class="card-title">Enterprises &amp; HQs</div><div class="card-desc">Guaranteed bandwidth for cloud apps, voice and video where shared broadband simply isn't reliable enough.</div></div>
-    <div class="card"><div class="card-title">Data Centres &amp; Hosting</div><div class="card-desc">High-availability internet for colocation and hosting customers, with SLAs they can resell with confidence.</div></div>
-    <div class="card"><div class="card-title">Digital Businesses</div><div class="card-desc">Consistent, symmetric performance for SaaS platforms and real-time services serving global users.</div></div>
-  </div>
-
-  <section class="section">
-    <div class="eyebrow">Technical Specifications</div>
-    <div class="section-heading" style="margin-bottom:48px">The detail that matters.</div>
-    <div class="spec-table">
-      <div class="spec-row"><div class="spec-k">Bandwidth Profile</div><div class="spec-v"><b>Dedicated &amp; symmetric</b> — equal upload and download, uncontended end to end.</div></div>
-      <div class="spec-row"><div class="spec-k">Speeds</div><div class="spec-v">From <b>100Mbps to 100Gbps</b>, scalable as demand grows.</div></div>
-      <div class="spec-row"><div class="spec-k">Access</div><div class="spec-v">Delivered at 200+ on-net PoPs or via fully managed Last Mile to off-net sites.</div></div>
-      <div class="spec-row"><div class="spec-k">IP Addressing</div><div class="spec-v">Static IPv4 and IPv6 allocations, with reverse DNS delegation on request.</div></div>
-      <div class="spec-row"><div class="spec-k">Resilience</div><div class="spec-v">Optional diverse and protected access for high-availability designs.</div></div>
-      <div class="spec-row"><div class="spec-k">SLA</div><div class="spec-v"><b>99.99% availability</b>, guaranteed throughput, and proactive 24/7 monitoring.</div></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="eyebrow">Frequently Asked</div>
-    <div class="section-heading-sm" style="margin-bottom:40px">DIA questions, answered.</div>
-    <div class="faq">
-      <div class="faq-item"><button class="faq-q">How is DIA different from broadband? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Broadband is contended — you share capacity with other users. DIA is dedicated and uncontended, with symmetric speeds and an SLA guaranteeing the bandwidth you pay for.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Do I get static IP addresses? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Yes. Every DIA service includes static IPv4 and IPv6 allocations, with reverse DNS delegation available on request.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Can I get diverse, resilient access? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Absolutely. We offer diverse and protected access options so a single fibre fault never takes your site offline.</div></div></div>
-    </div>
-  </section>
-
-  <div class="footer-slot"></div>
-</div><!-- /page-dia -->
-
-<!-- ═══════════ LAST MILE ═══════════ -->
-<div class="page" id="page-last-mile">
-  <div class="inner-hero">
-    <div class="page-label">Products / Last Mile</div>
-    <div class="page-title">Connect the<br>final stretch.</div>
-    <p class="page-sub">Seamlessly connect your off-net buildings, remote offices, or edge locations into the Netlayer global backbone with fully managed Last Mile connectivity.</p>
-    <div style="display:flex;gap:16px;margin-top:36px;position:relative;z-index:1;flex-wrap:wrap">
-      <button class="btn-primary" onclick="goPage('contact')">Download Product Sheet</button>
-      <button class="btn-outline" style="margin-top:0" onclick="goPage('contact')">Contact us</button>
-    </div>
-  </div>
-  <div class="prod-highlights">
-    <div class="ph-cell"><div class="ph-title">Off-net <span class="accent">Access</span></div><div class="ph-desc">Reach buildings and sites beyond our on-net footprint.</div></div>
-    <div class="ph-cell"><div class="ph-title">30+ <span class="accent">Markets</span></div><div class="ph-desc">Local provider integration across our global footprint.</div></div>
-    <div class="ph-cell"><div class="ph-title">Fully <span class="accent">Managed</span></div><div class="ph-desc">One contract, one provider, end-to-end delivery.</div></div>
-  </div>
-  <section class="section">
-    <div class="two-col">
-      <div>
-        <div class="eyebrow">What is Last Mile?</div>
-        <div class="section-heading">Bridge to the backbone.</div>
-        <p class="section-body">Last Mile connects your premises — wherever they are — into our metro, international transport and backbone services. By integrating diverse local providers across 30+ markets, we extend our reach to your edge locations and remote offices, all delivered and managed under a single Netlayer contract.</p>
-      </div>
-      <div>
-        <div class="eyebrow">Why choose Netlayer</div>
-        <ul class="benefit-list">
-          <li>Reach off-net buildings and remote sites</li>
-          <li>Diverse local provider integration in 30+ markets</li>
-          <li>Single contract, single point of accountability</li>
-          <li>Seamless onward connection to our backbone</li>
-          <li>Fully managed and monitored end-to-end</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <div class="cta-banner"><div><div class="cta-heading">No location<br><em>out of reach.</em></div></div><button class="btn-primary" onclick="goPage('contact')" style="position:relative;z-index:1">Get in touch</button></div>
-  <section class="section-sm" style="border-top:1px solid var(--line)"><div class="eyebrow">Who is it for?</div><div class="section-heading-sm">For reach beyond the backbone.</div></section>
-  <div class="cards-grid">
-    <div class="card"><div class="card-title">Carriers &amp; ISPs</div><div class="card-desc">Extend your footprint into markets and buildings where you have no physical presence, under one contract.</div></div>
-    <div class="card"><div class="card-title">Enterprises</div><div class="card-desc">Connect branch offices, remote sites and edge locations into your wider network seamlessly.</div></div>
-    <div class="card"><div class="card-title">Data Centre Operators</div><div class="card-desc">Reach off-net facilities and customer premises without deploying your own access infrastructure.</div></div>
-  </div>
-
-  <section class="section">
-    <div class="eyebrow">Technical Specifications</div>
-    <div class="section-heading" style="margin-bottom:48px">The detail that matters.</div>
-    <div class="spec-table">
-      <div class="spec-row"><div class="spec-k">Access Media</div><div class="spec-v">Fibre, Ethernet and wavelength tails, depending on local availability.</div></div>
-      <div class="spec-row"><div class="spec-k">Coverage</div><div class="spec-v">Diverse local provider integration across <b>30+ markets</b> globally.</div></div>
-      <div class="spec-row"><div class="spec-k">Bandwidth</div><div class="spec-v">From <b>10Mbps to 100Gbps</b>, matched to the underlying access and your requirement.</div></div>
-      <div class="spec-row"><div class="spec-k">Delivery Model</div><div class="spec-v"><b>Fully managed</b> — single contract, single point of accountability, one bill.</div></div>
-      <div class="spec-row"><div class="spec-k">Onward Service</div><div class="spec-v">Seamless handoff into IP Transit, Cloud Connect, DIA or EPL across our backbone.</div></div>
-      <div class="spec-row"><div class="spec-k">SLA</div><div class="spec-v">End-to-end SLA with proactive monitoring and managed fault resolution.</div></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="eyebrow">Frequently Asked</div>
-    <div class="section-heading-sm" style="margin-bottom:40px">Last Mile questions, answered.</div>
-    <div class="faq">
-      <div class="faq-item"><button class="faq-q">What does "off-net" mean? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Off-net refers to a building or site not directly on our network. Last Mile bridges that gap by integrating a local access provider, delivered and managed by us under a single contract.</div></div></div>
-      <div class="faq-item"><button class="faq-q">How long does Last Mile take to deliver? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Timelines depend on the local access provider and site readiness. We scope realistic delivery dates during pre-sales and manage the build end to end.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Who do I call if there's a fault? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Just us. We're your single point of accountability, coordinating with the local provider so you have one contract, one NOC and one SLA.</div></div></div>
-    </div>
-  </section>
-
-  <div class="footer-slot"></div>
-</div><!-- /page-last-mile -->
-
-<!-- ═══════════ EPL ═══════════ -->
-<div class="page" id="page-epl">
-  <div class="inner-hero">
-    <div class="page-label">Products / Ethernet Private Line</div>
-    <div class="page-title">Scale bandwidth,<br>effortlessly.</div>
-    <p class="page-sub">New to a market? Remain flexible and effortlessly scale bandwidth up and down across the metro region with point-to-point Ethernet Private Line connectivity.</p>
-    <div style="display:flex;gap:16px;margin-top:36px;position:relative;z-index:1;flex-wrap:wrap">
-      <button class="btn-primary" onclick="goPage('contact')">Download Product Sheet</button>
-      <button class="btn-outline" style="margin-top:0" onclick="goPage('contact')">Contact us</button>
-    </div>
-  </div>
-  <div class="prod-highlights">
-    <div class="ph-cell"><div class="ph-title">100M – <span class="accent">100G</span></div><div class="ph-desc">Flexible bandwidth that scales with your demand.</div></div>
-    <div class="ph-cell"><div class="ph-title">Point-to-<span class="accent">Point</span></div><div class="ph-desc">Dedicated Ethernet between two locations.</div></div>
-    <div class="ph-cell"><div class="ph-title">Flexible <span class="accent">Terms</span></div><div class="ph-desc">Adapt bandwidth and contract terms as you grow.</div></div>
-  </div>
-  <section class="section">
-    <div class="two-col">
-      <div>
-        <div class="eyebrow">What is EPL?</div>
-        <div class="section-heading">Flexible metro Ethernet.</div>
-        <p class="section-body">Ethernet Private Line delivers dedicated, point-to-point Ethernet connectivity across the metro region. Perfect for businesses entering a new market, EPL lets you scale bandwidth up and down effortlessly — with the flexibility to adapt contract terms, backhaul routes and providers as your needs evolve.</p>
-      </div>
-      <div>
-        <div class="eyebrow">Why choose Netlayer</div>
-        <ul class="benefit-list">
-          <li>Effortlessly scale bandwidth up and down</li>
-          <li>Dedicated point-to-point Ethernet</li>
-          <li>Flexible contract terms for new markets</li>
-          <li>Choice of backbone routes and providers</li>
-          <li>Carrier-grade resilience and SLAs</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <div class="cta-banner"><div><div class="cta-heading">Stay flexible.<br><em>Scale on demand.</em></div></div><button class="btn-primary" onclick="goPage('contact')" style="position:relative;z-index:1">Get in touch</button></div>
-  <section class="section-sm" style="border-top:1px solid var(--line)"><div class="eyebrow">Who is it for?</div><div class="section-heading-sm">For point-to-point performance.</div></section>
-  <div class="cards-grid">
-    <div class="card"><div class="card-title">Enterprises</div><div class="card-desc">Connect two sites with dedicated, private Ethernet — ideal for site-to-site and data centre links.</div></div>
-    <div class="card"><div class="card-title">Carriers &amp; ISPs</div><div class="card-desc">Scalable metro backhaul and interconnect with flexible bandwidth and contract terms for new markets.</div></div>
-    <div class="card"><div class="card-title">Cloud &amp; Content</div><div class="card-desc">Private transport between edge nodes and cloud on-ramps with predictable, low-latency delivery.</div></div>
-  </div>
-
-  <section class="section">
-    <div class="eyebrow">Technical Specifications</div>
-    <div class="section-heading" style="margin-bottom:48px">The detail that matters.</div>
-    <div class="spec-table">
-      <div class="spec-row"><div class="spec-k">Topology</div><div class="spec-v"><b>Point-to-point</b> Ethernet (E-Line), dedicated to your traffic only.</div></div>
-      <div class="spec-row"><div class="spec-k">Bandwidth</div><div class="spec-v">From <b>100Mbps to 100Gbps</b>, scalable up and down across the metro region.</div></div>
-      <div class="spec-row"><div class="spec-k">Interfaces</div><div class="spec-v">1GE, 10GE and 100GE handoffs with VLAN tagging supported.</div></div>
-      <div class="spec-row"><div class="spec-k">Performance</div><div class="spec-v">Committed bandwidth with low frame delay and jitter for real-time applications.</div></div>
-      <div class="spec-row"><div class="spec-k">Flexibility</div><div class="spec-v">Adapt bandwidth, contract terms, backhaul routes and providers as your needs evolve.</div></div>
-      <div class="spec-row"><div class="spec-k">SLA</div><div class="spec-v"><b>99.99% availability</b> with carrier-grade resilience and 24/7 monitoring.</div></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="eyebrow">Frequently Asked</div>
-    <div class="section-heading-sm" style="margin-bottom:40px">EPL questions, answered.</div>
-    <div class="faq">
-      <div class="faq-item"><button class="faq-q">What's the difference between EPL and DIA? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">EPL is a private point-to-point link between two of your sites — it does not connect to the internet. DIA provides dedicated access to the public internet. Many customers use both together.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Can I change bandwidth later? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Yes — that flexibility is the point. EPL lets you scale bandwidth up and down across the metro region as your demand changes, with flexible contract terms.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Is the link private and dedicated? <span class="fic"></span></button><div class="faq-a"><div class="faq-a-inner">Completely. EPL is a dedicated Layer 2 E-Line carrying only your traffic, with committed bandwidth and low, predictable latency.</div></div></div>
-    </div>
-  </section>
-
-  <div class="footer-slot"></div>
-</div><!-- /page-epl -->
-
-<!-- ═══════════ SOLUTIONS ═══════════ -->
-<div class="page" id="page-solutions">
-  <div class="inner-hero">
-    <div class="page-label">Solutions</div>
-    <div class="page-title">Who we<br>connect.</div>
-    <p class="page-sub">Infrastructure providers and digital businesses undergoing transformation can interconnect globally through a single partner — optimising performance and security while reducing cost.</p>
-  </div>
-
-  <div class="cards-grid" style="border-top:none">
-    <div class="card" style="padding-top:64px">
-      <div class="card-num">01</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
-      <div class="card-title">Infrastructure Providers</div>
-      <div class="card-desc">Establish dedicated, secure access to all major cloud providers and regions, enabling local infrastructure resiliency and support for customer requirements — underpinned by our comprehensive SLA.</div>
-    </div>
-    <div class="card" style="padding-top:64px">
-      <div class="card-num">02</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
-      <div class="card-title">Digital Businesses</div>
-      <div class="card-desc">Integrate secure, dedicated cloud and IP connectivity into your network architecture — establishing a presence for your ASN and a reliable foundation that supports business growth.</div>
-    </div>
-    <div class="card" style="padding-top:64px">
-      <div class="card-num">03</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></div>
-      <div class="card-title">Data Centres &amp; Hosting</div>
-      <div class="card-desc">Empower interconnected colocation architectures with scalable, secure connectivity — enabling location attractiveness without the need to deploy your own network.</div>
-    </div>
-    <div class="card" style="padding-top:64px">
-      <div class="card-num">04</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
-      <div class="card-title">Cloud &amp; Content Platforms</div>
-      <div class="card-desc">Empower interconnected cloud and data centre architectures with dedicated, secure access via cloud on-ramps to platforms that support optimal end-user experiences.</div>
-    </div>
-    <div class="card" style="padding-top:64px">
-      <div class="card-num">05</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M21 12c-1 0-3-1-3-3s2-3 3-3-2-3-3-3-3 2-3 3-1 3-3 3"/><circle cx="12" cy="12" r="10"/></svg></div>
-      <div class="card-title">SD-WAN / SASE Providers</div>
-      <div class="card-desc">Enable business-grade underlay infrastructure for innovative overlay software stacks, delivering full cloud connectivity fully supported by comprehensive SLAs.</div>
-    </div>
-    <div class="card" style="padding-top:64px">
-      <div class="card-num">06</div>
-      <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-      <div class="card-title">Managed IT Providers</div>
-      <div class="card-desc">Interconnect multiple cloud and user endpoints globally through a single backbone provider — fully monitored and optimised for the needs of enterprise customers.</div>
-    </div>
-  </div>
-
-  <section class="section">
-    <div class="two-col">
-      <div>
-        <div class="eyebrow">Case in Point</div>
-        <div class="section-heading">Connecting London to Singapore — and everywhere between.</div>
-        <p class="section-body">We design and build global network solutions from edge to cloud, connecting markets such as London to Singapore, New York to Taipei, and Johannesburg to Kuala Lumpur. Our technical pre-sales team supports requirements like low latency, resilience, or emerging-market access.</p>
-        <button class="btn-outline" onclick="goPage('contact')">Talk to Solutions</button>
-      </div>
-      <div class="info-panel">
-        <div class="panel-eyebrow">By the Numbers</div>
-        <div class="outcome-list">
-          <div class="outcome"><div class="v">350Gbps+</div><div class="l">Daily IP traffic supported</div></div>
-          <div class="outcome"><div class="v">10,000+</div><div class="l">Direct peers worldwide</div></div>
-          <div class="outcome"><div class="v green">#2</div><div class="l">Most peered provider globally</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="cta-banner">
-    <div><div class="cta-heading">Find your<br><em>network solution.</em></div></div>
-    <button class="btn-primary" onclick="goPage('contact')" style="position:relative;z-index:1">Talk to Solutions</button>
-  </div>
-  <div class="footer-slot"></div>
-</div><!-- /page-solutions -->
-
-<!-- ═══════════ NETWORK ═══════════ -->
-<div class="page" id="page-network">
-  <div class="inner-hero">
-    <div class="page-label">Network</div>
-    <div class="page-title">200+ PoPs.<br>One backbone.</div>
-    <p class="page-sub">Netlayer maintains an extensive global backbone (AS24482) across every major market — diverse subsea and terrestrial routes giving you resilient, low-latency reach across APAC and beyond.</p>
-    <div class="status-banner" style="margin-top:32px">
-      <div class="status-dot"></div>
-      <div class="status-text">Global Backbone Operational · AS24482</div>
-    </div>
-  </div>
-
-  <div class="stats-grid">
-    <div class="stat-cell"><div class="stat-num">200+</div><div class="stat-label">On-Net Data Centres</div></div>
-    <div class="stat-cell"><div class="stat-num">30+</div><div class="stat-label">Subsea Cables</div></div>
-    <div class="stat-cell"><div class="stat-num">99.99%</div><div class="stat-label">Network Uptime SLA</div></div>
-  </div>
-
-  <div class="network-map">
-    <div class="eyebrow">Global Market Coverage</div>
-    <div class="section-heading-sm" style="margin-bottom:8px">Key and emerging markets, directly served.</div>
-    <p style="font-size:14px;color:rgba(var(--ink),.55);max-width:520px;line-height:1.7">From global hubs to high-growth emerging markets, our backbone interconnects the regions that matter most across Asia Pacific and beyond.</p>
-    <div class="map-grid">
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Singapore</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">London</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Hong Kong</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Tokyo</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Sydney</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Taipei</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Kuala Lumpur</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Jakarta</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Mumbai</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Bangkok</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Manila</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Ho Chi Minh</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">New York</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Seoul</div><div class="node-status">Operational</div></div>
-      <div class="map-node"><div class="node-dot"></div><div class="node-name">Johannesburg</div><div class="node-status">Operational</div></div>
-    </div>
-  </div>
-
-  <section class="section">
-    <div class="two-col">
-      <div>
-        <div class="eyebrow">Network Density</div>
-        <div class="section-heading">Strong in APAC. Connected worldwide.</div>
-        <p class="section-body">Our expansive global network stands strong in APAC, including routing options in China, powered by strategic partnerships with giants like NTT, Tata, SGIX and HKIX. Available across 200+ PoPs with 100GE support in major markets.</p>
-        <button class="btn-outline" onclick="goPage('contact')">View Network Map</button>
-      </div>
-      <div class="kv-list">
-        <div class="kv-row"><div class="k">Daily IP Traffic</div><div class="v green">350Gbps+</div></div>
-        <div class="kv-row"><div class="k">Direct Peers</div><div class="v green">10,000+</div></div>
-        <div class="kv-row"><div class="k">Internet Exchanges</div><div class="v">100+</div></div>
-        <div class="kv-row"><div class="k">Global Peering Rank</div><div class="v green">#2</div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="cta-banner">
-    <div><div class="cta-heading">Need a new market?<br><em>We'll design the route.</em></div></div>
-    <button class="btn-primary" onclick="goPage('network-map')" style="position:relative;z-index:1">Explore the Map</button>
-  </div>
-  <div class="footer-slot"></div>
-</div><!-- /page-network -->
-
-<!-- ═══════════ NETWORK MAP ═══════════ -->
-<div class="page" id="page-network-map">
-  <div class="inner-hero" style="padding-bottom:60px">
-    <div class="page-label">Network / Map</div>
-    <div class="page-title">The Netlayer<br>backbone, live.</div>
-    <p class="page-sub">Explore our global footprint — 200+ Points of Presence interconnected by diverse subsea and terrestrial routes. Hover any node to see the market it serves.</p>
-  </div>
-
-  <div class="map-stage">
-    <svg viewBox="0 0 1000 480" role="img" aria-label="Netlayer global network map">
-      <!-- stylised landmass dot grid -->
-      <g class="world" id="worldDots"></g>
-      <!-- routes between hubs (drawn by JS) -->
-      <g id="routeLayer"></g>
-      <!-- PoP nodes (drawn by JS) -->
-      <g id="popLayer"></g>
-    </svg>
-  </div>
-
-  <div class="map-legend">
-    <div class="legend-item"><span class="legend-swatch hub"></span> Core Hub</div>
-    <div class="legend-item"><span class="legend-swatch edge"></span> Regional PoP</div>
-    <div class="legend-item"><span class="legend-swatch route"></span> Backbone Route</div>
-    <div class="legend-spacer">AS24482 · 200+ PoPs · 30+ Markets</div>
-  </div>
-
-  <div class="stats-grid">
-    <div class="stat-cell reveal"><div class="stat-num">200+</div><div class="stat-label">Points of Presence</div></div>
-    <div class="stat-cell reveal" data-delay="1"><div class="stat-num">30+</div><div class="stat-label">Subsea Cables</div></div>
-    <div class="stat-cell reveal" data-delay="2"><div class="stat-num">&lt;50ms</div><div class="stat-label">Intra-APAC Latency</div></div>
-  </div>
-
-  <section class="section-sm">
-    <div class="eyebrow reveal">Regional Reach</div>
-    <div class="section-heading-sm reveal">Coverage where it counts.</div>
-  </section>
-  <div class="region-grid">
-    <div class="region-cell reveal"><div class="rnum">95+</div><div class="rname">Asia Pacific</div><div class="rdesc">The densest part of our network — Singapore, Hong Kong, Tokyo, Sydney and beyond.</div></div>
-    <div class="region-cell reveal" data-delay="1"><div class="rnum">60+</div><div class="rname">Europe &amp; EMEA</div><div class="rdesc">London-anchored reach into continental Europe, the Middle East and Africa.</div></div>
-    <div class="region-cell reveal" data-delay="2"><div class="rnum">30+</div><div class="rname">Americas</div><div class="rdesc">New York gateway connecting North America to our trans-Pacific routes.</div></div>
-    <div class="region-cell reveal" data-delay="3"><div class="rnum">15+</div><div class="rname">Emerging Markets</div><div class="rdesc">High-growth Southeast Asian and Southern Hemisphere markets others can't reach.</div></div>
-  </div>
-
-  <section class="section">
-    <div class="two-col">
-      <div class="reveal">
-        <div class="eyebrow">Route Intelligence</div>
-        <div class="section-heading">Diverse paths, by design.</div>
-        <p class="section-body">Every market is reachable via multiple diverse routes — subsea and terrestrial — so a single cable cut never takes you offline. Our team engineers the optimal path for your traffic, balancing latency, resilience and cost across the entire backbone.</p>
-        <button class="btn-outline" onclick="goPage('contact')">Request a Route Plan</button>
-      </div>
-      <div class="reveal" data-delay="1" style="display:flex;flex-direction:column;gap:1px;background:var(--line-2)">
-        <div style="background:var(--cell);padding:26px 30px;display:flex;justify-content:space-between;align-items:center">
-          <div style="font-size:13.5px;color:rgba(var(--ink),.62)">London → Singapore</div>
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--accent-2)">~162ms</div>
-        </div>
-        <div style="background:var(--cell);padding:26px 30px;display:flex;justify-content:space-between;align-items:center">
-          <div style="font-size:13.5px;color:rgba(var(--ink),.62)">Tokyo → Hong Kong</div>
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--accent-2)">~48ms</div>
-        </div>
-        <div style="background:var(--cell);padding:26px 30px;display:flex;justify-content:space-between;align-items:center">
-          <div style="font-size:13.5px;color:rgba(var(--ink),.62)">Sydney → Singapore</div>
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--green)">~92ms</div>
-        </div>
-        <div style="background:var(--cell);padding:26px 30px;display:flex;justify-content:space-between;align-items:center">
-          <div style="font-size:13.5px;color:rgba(var(--ink),.62)">New York → Taipei</div>
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--accent-2)">~210ms</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="cta-banner">
-    <div><div class="cta-heading">Can't see your<br><em>market on the map?</em></div><p class="cta-sub">We add new PoPs and routes on demand. Tell us where you need to be.</p></div>
-    <button class="btn-primary" onclick="goPage('contact')" style="position:relative;z-index:1">Request a Market</button>
-  </div>
-  <div class="footer-slot"></div>
-</div><!-- /page-network-map -->
-
-<!-- ═══════════ COMPANY ═══════════ -->
-<div class="page" id="page-company">
-  <div class="inner-hero">
-    <div class="page-label">About Us</div>
-    <div class="page-title">Your global carrier,<br>rooted in APAC.</div>
-    <p class="page-sub">Headquartered in Singapore and London, Netlayer has spent over 25 years earning a reputation for exceptional customer experience, reliable infrastructure, and deep regional expertise across Asia Pacific and beyond.</p>
-  </div>
-
-  <div class="stats-grid">
-    <div class="stat-cell"><div class="stat-num">2000</div><div class="stat-label">Established</div></div>
-    <div class="stat-cell"><div class="stat-num">30+</div><div class="stat-label">Global Markets</div></div>
-    <div class="stat-cell"><div class="stat-num">#2</div><div class="stat-label">Most Peered Globally</div></div>
-  </div>
-
-  <div class="timeline">
-    <div class="eyebrow">Our Story</div>
-    <div class="section-heading-sm">From Singapore roots to global backbone.</div>
-    <div class="timeline-items">
-      <div class="tl-item"><div class="tl-year">2000</div><div><div class="tl-title">Founded in Singapore</div><div class="tl-desc">Netlayer is established, beginning an organic journey to become one of the world's most trusted wholesale network providers.</div></div></div>
-      <div class="tl-item"><div class="tl-year">2010</div><div><div class="tl-title">APAC Density</div><div class="tl-desc">Deep regional expansion across Asia Pacific, building network density and long-standing partnerships with regional carriers.</div></div></div>
-      <div class="tl-item"><div class="tl-year">2018</div><div><div class="tl-title">London Office</div><div class="tl-desc">European presence established, extending global reach with low-latency routes connecting EMEA to APAC.</div></div></div>
-      <div class="tl-item"><div class="tl-year">2024</div><div><div class="tl-title">Top-Tier Peering</div><div class="tl-desc">Ranked #2 most peered provider globally, with 10,000+ direct peers across 100+ Internet Exchanges worldwide.</div></div></div>
-      <div class="tl-item"><div class="tl-year">2025</div><div><div class="tl-title">Industry Recognition</div><div class="tl-desc">Double win at The Fast Mode Awards, recognising network expansion and connectivity leadership across the region.</div></div></div>
-      <div class="tl-item"><div class="tl-year">2026</div><div><div class="tl-title">Southern Hemisphere Expansion</div><div class="tl-desc">Australian network expansion bridges domestic hubs with high-growth Southeast Asian markets, led by new Pacific leadership.</div></div></div>
-    </div>
-  </div>
-
-  <section class="section-sm" style="border-top:1px solid rgba(255,255,255,.06)">
-    <div class="eyebrow">Your Expert Team</div>
-    <div class="section-heading-sm">Assembled to deliver great service.</div>
-  </section>
-  <div class="team-grid">
-    <div class="team-card"><div class="team-avatar">HC</div><div class="team-name">Heng Chai Tan</div><div class="team-role">Founder &amp; CTO</div><div class="team-bio">For 25 years, Heng Chai has organically developed Netlayer with visionary leadership and technical expertise into a truly customer-centric network provider across 30 markets.</div></div>
-    <div class="team-card"><div class="team-avatar">SA</div><div class="team-name">Shawn Ang</div><div class="team-role">Managing Director</div><div class="team-bio">Leads the Asia Pacific business, focused on building Netlayer into a leading connectivity provider across key and emerging markets.</div></div>
-    <div class="team-card"><div class="team-avatar">BC</div><div class="team-name">Ben Cooper</div><div class="team-role">SVP, Global Network Strategy</div><div class="team-bio">Leads expansion across Australia and the Pacific, supporting high-performance, low-latency Southern Hemisphere connectivity.</div></div>
-    <div class="team-card"><div class="team-avatar">MS</div><div class="team-name">Michael Sii</div><div class="team-role">Head of Presales &amp; Engineering, APAC</div><div class="team-bio">Uses an extensive technical background to support client solution development and ensure successful network deployments across the region.</div></div>
-    <div class="team-card"><div class="team-avatar">CA</div><div class="team-name">Charles Ang</div><div class="team-role">Business Development Director</div><div class="team-bio">With over 25 years in telecom, Charles spearheads business development, enhancing partnerships and solution resilience across APAC.</div></div>
-    <div class="team-card"><div class="team-avatar">DM</div><div class="team-name">Daniel Minns</div><div class="team-role">Regional Sales Director, EMEA</div><div class="team-bio">Nearly 30 years in telecoms, leveraging deep sales and leadership expertise to drive Netlayer's international expansion.</div></div>
-  </div>
-
-  <div class="cta-banner">
-    <div><div class="cta-heading">Partnerships,<br><em>not just network services.</em></div><p class="cta-sub">Work alongside a trusted partner committed to supporting your growth.</p></div>
-    <button class="btn-primary" onclick="goPage('contact')" style="position:relative;z-index:1">Get in touch</button>
-  </div>
-  <div class="footer-slot"></div>
-</div><!-- /page-company -->
-
-<!-- ═══════════ CONTACT ═══════════ -->
-<div class="page" id="page-contact">
-  <div class="inner-hero">
-    <div class="page-label">Get in touch</div>
-    <div class="page-title">Let's build your<br>network.</div>
-    <p class="page-sub">Tell us about your connectivity requirements. Our technical pre-sales team will help design and build your global network solution from edge to cloud.</p>
-    <p style="font-size:12px;color:rgba(var(--ink),.4);margin-top:18px;letter-spacing:.08em;text-transform:uppercase;position:relative;z-index:1">Singapore · London · 30+ Markets</p>
-  </div>
-
-  <section class="section">
-    <div class="two-col-3">
-      <div>
-        <div class="eyebrow">Get Started</div>
-        <div class="section-heading-sm" style="margin-bottom:28px">Tell us about your requirements</div>
-        <form class="form-grid" id="contact-form" novalidate>
-          <div class="form-group"><label>First Name</label><input type="text" placeholder="Jane" required></div>
-          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Tan" required></div>
-          <div class="form-group"><label>Work Email</label><input type="email" placeholder="jane@company.com" required></div>
-          <div class="form-group"><label>Phone</label><input type="tel" placeholder="+65 0000 0000"></div>
-          <div class="form-group full"><label>Company Name</label><input type="text" placeholder="Acme Networks" required></div>
-          <div class="form-group"><label>Organisation Type</label>
-            <select required>
-              <option value="">Select type…</option>
-              <option>Infrastructure Provider</option><option>Digital Business</option>
-              <option>Data Centre / Hosting</option><option>Cloud / Content Platform</option>
-              <option>SD-WAN / SASE Provider</option><option>Managed IT Provider</option>
-            </select>
-          </div>
-          <div class="form-group"><label>Primary Product Interest</label>
-            <select required>
-              <option value="">Select product…</option>
-              <option>Cloud Connect</option><option>IP Transit</option>
-              <option>IX Peering</option><option>DC Wave</option>
-              <option>Dedicated Internet Access</option><option>Last Mile</option>
-              <option>Ethernet Private Line</option>
-            </select>
-          </div>
-          <div class="form-group full"><label>Markets of Interest</label>
-            <select required>
-              <option value="">Select region…</option>
-              <option>Asia Pacific</option><option>Europe (EMEA)</option>
-              <option>North America</option><option>Southern Hemisphere</option>
-              <option>Emerging Markets</option><option>Global / Multi-region</option>
-            </select>
-          </div>
-          <div class="form-group full"><label>Tell us more</label><textarea placeholder="What are you looking to connect? Any specific requirements like low latency, resilience, or bandwidth?"></textarea></div>
-          <div class="form-group full">
-            <button type="submit" class="btn-primary" style="width:fit-content">Send Enquiry</button>
-          </div>
-        </form>
-      </div>
-      <div>
-        <div style="position:sticky;top:120px;display:flex;flex-direction:column;gap:24px">
-          <div class="info-panel">
-            <div class="panel-eyebrow tight">What happens next</div>
-            <div class="steps-wrap">
-              <div class="step-row">
-                <div class="step-n">01</div>
-                <div><div class="step-h">We review your enquiry</div><div class="step-d">Our technical pre-sales team assesses your requirements against our network footprint and capabilities.</div></div>
-              </div>
-              <div class="step-row">
-                <div class="step-n">02</div>
-                <div><div class="step-h">Tailored proposal</div><div class="step-d">You receive a customised solution — routes, capacity, on-ramps and pricing scoped to your exact markets.</div></div>
-              </div>
-              <div class="step-row">
-                <div class="step-n">03</div>
-                <div><div class="step-h">Design, build, deliver</div><div class="step-d">We design and build your solution from edge to cloud, with deployment managed by our engineering team.</div></div>
-              </div>
-            </div>
-          </div>
-          <div class="info-panel sm">
-            <div class="panel-eyebrow tight">Offices</div>
-            <p class="panel-text" style="margin-bottom:8px">Singapore (HQ) · London</p>
-            <p class="panel-text" style="margin-bottom:18px">UEN: 201417460E</p>
-            <button class="btn-outline" style="margin-top:0">View PoP List →</button>
-          </div>
-          <div class="status-banner">
-            <div class="status-dot"></div>
-            <div class="status-text">Network Operational · AS24482</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="footer-slot"></div>
-</div><!-- /page-contact -->
-
+</main>
+<script src="assets/js/partials.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

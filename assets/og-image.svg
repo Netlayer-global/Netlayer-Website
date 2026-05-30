@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070a11"/>
+      <stop offset="1" stop-color="#0b0f18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="12%" r="60%">
+      <stop offset="0" stop-color="#4f8cff" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#4f8cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="80" y="300" font-family="Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="8" fill="#ff3b3b">NETLAYER</text>
+  <text x="78" y="400" font-family="Arial, sans-serif" font-size="84" font-weight="800" fill="#f4f7fc">Expand across APAC</text>
+  <text x="78" y="490" font-family="Arial, sans-serif" font-size="84" font-weight="800" fill="rgba(244,247,252,.35)">and beyond</text>
+  <text x="80" y="560" font-family="Arial, sans-serif" font-size="26" fill="rgba(244,247,252,.6)">200+ PoPs · 30+ Markets · Global backbone AS24482</text>
+</svg>

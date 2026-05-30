@@ -72,8 +72,9 @@ server {
     root /var/www/netlayer;
     index index.html;
 
+    # serve real pages; allow extensionless URLs (e.g. /ip-transit -> ip-transit.html)
     location / {
-        try_files $uri $uri/ /index.html;
+        try_files $uri $uri.html $uri/ =404;
     }
 
     # cache static assets

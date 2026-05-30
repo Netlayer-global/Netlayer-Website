@@ -8,21 +8,33 @@ Built as a self-contained static site: plain HTML, CSS and vanilla JavaScript. N
 
 ```
 .
-├── index.html            # Single-page app (all pages switch via JS)
+├── index.html             # Home
+├── products.html          # Products overview
+├── cloud-connect.html     # Product detail pages
+├── ip-transit.html
+├── ix-peering.html
+├── dc-wave.html
+├── dia.html
+├── last-mile.html
+├── epl.html
+├── solutions.html         # Solutions
+├── network.html           # Our network
+├── network-map.html       # Interactive Leaflet map
+├── company.html           # About + team + values
+├── news.html              # News & insights
+├── contact.html           # Enquiry form
 ├── assets/
-│   ├── css/styles.css     # Design tokens + light/dark theme + all components
-│   └── js/main.js         # Page nav, theme toggle, scroll reveal, network map, FAQ
-├── README.md
-├── DEPLOY.md              # Full Ubuntu / static-IP deployment guide
-└── .gitignore
+│   ├── css/styles.css      # Design tokens + light/dark theme + components
+│   ├── js/partials.js      # Shared nav + footer (injected on every page)
+│   ├── js/main.js          # Theme toggle, scroll reveal, counters, FAQ, form
+│   └── js/map.js           # Leaflet network map (map page only)
+├── robots.txt · sitemap.xml
+├── README.md · DEPLOY.md
 ```
 
-## Features
-
-- Dark + light theme with a toggle (preference saved in `localStorage`)
-- 14 in-app pages (home, products + 7 product detail pages, solutions, network, interactive network map, company, contact)
-- Interactive SVG network map, scroll-reveal animations, FAQ accordions
-- Fully responsive (desktop, tablet, mobile)
+Each page is a real, independently-indexable HTML file with its own `<title>`,
+meta description and Open Graph tags. The nav and footer are injected by
+`partials.js` so they stay consistent across all pages — edit once, applies everywhere.
 
 ## Run locally
 
