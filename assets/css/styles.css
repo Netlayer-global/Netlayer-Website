@@ -106,7 +106,7 @@ nav{
   transition:background .4s,backdrop-filter .4s;
 }
 nav.scrolled{background:var(--nav-scrolled);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-.logo{font-weight:700;font-size:22px;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;flex-shrink:0;color:var(--heading)}
+.logo{font-weight:700;font-size:26px;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;flex-shrink:0;color:var(--heading)}
 .logo:hover{opacity:.8}
 .nav-links{display:flex;align-items:center;gap:34px;list-style:none}
 .nav-links>li{position:relative}
