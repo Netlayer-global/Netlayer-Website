@@ -106,7 +106,7 @@ nav{
   transition:background .4s,backdrop-filter .4s;
 }
 nav.scrolled{background:var(--nav-scrolled);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-.logo{font-weight:700;font-size:14px;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;flex-shrink:0;color:var(--heading)}
+.logo{font-weight:700;font-size:18px;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;flex-shrink:0;color:var(--heading)}
 .logo:hover{opacity:.8}
 .nav-links{display:flex;align-items:center;gap:34px;list-style:none}
 .nav-links>li{position:relative}
@@ -597,7 +597,7 @@ td.green-val{color:var(--green);font-weight:700}
    FOOTER
 ═══════════════════════════════════════════ */
 footer{padding:60px 52px 44px;border-top:1px solid var(--line);display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;background:var(--bg)}
-.footer-brand .logo-text{font-weight:700;font-size:15px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px;color:var(--heading)}
+.footer-brand .logo-text{font-weight:700;font-size:20px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:18px;color:var(--heading)}
 .footer-brand p{font-size:13px;color:rgba(var(--ink),.72);line-height:1.7;max-width:260px;margin-bottom:24px}
 .footer-col h4{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(var(--ink),.58);margin-bottom:18px}
 .footer-col ul{list-style:none}
