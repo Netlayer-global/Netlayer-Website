@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Node (only if you later add tooling)
+node_modules/
+npm-debug.log*
+
+# Python cache (from local dev server)
+__pycache__/
+*.pyc
+
+# Local env
+.env
+.env.local
+
+# Keep editor settings out of the repo (optional)
+.vscode/
