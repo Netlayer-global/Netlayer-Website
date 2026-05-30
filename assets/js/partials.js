@@ -51,7 +51,7 @@
         '<div class="dropdown">' +
           '<a href="network"><span class="dd-title">Global Backbone</span><span class="dd-desc">AS24482 &middot; 200+ PoPs worldwide</span></a>' +
           '<a href="network-map"><span class="dd-title">Network Map</span><span class="dd-desc">Interactive global PoP &amp; route map</span></a>' +
-          '<a href="network"><span class="dd-title">Peering Density</span><span class="dd-desc">10,000+ peers &middot; #2 globally</span></a>' +
+          '<a href="network"><span class="dd-title">Peering Density</span><span class="dd-desc">100+ Internet Exchanges worldwide</span></a>' +
         '</div>' +
       '</li>' +
       '<li class="has-dropdown">' +
