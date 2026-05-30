@@ -97,7 +97,7 @@ function buildMap() {
     m.bindPopup(
       '<div class="popup-name">' + p.n + '</div>' +
       '<div class="popup-meta">' + p.region + ' · ' + p.pops + ' PoPs · ' + (p.hub ? 'Core hub' : 'Regional') + '</div>' +
-      '<span class="popup-tag">AS24482</span>',
+      '<span class="popup-tag">AS50839</span>',
       { className: 'netlayer-popup', closeButton: false }
     );
     m.bindTooltip(p.n, { permanent: true, direction: 'right', offset: [8, 0], className: 'pop-tip' });

@@ -49,7 +49,7 @@
         '<a href="network"' + act('network') + '>Network' +
           '<svg class="caret" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>' +
         '<div class="dropdown">' +
-          '<a href="network"><span class="dd-title">Global Backbone</span><span class="dd-desc">AS24482 &middot; 200+ PoPs worldwide</span></a>' +
+          '<a href="network"><span class="dd-title">Global Backbone</span><span class="dd-desc">AS50839 &middot; 200+ PoPs worldwide</span></a>' +
           '<a href="network-map"><span class="dd-title">Network Map</span><span class="dd-desc">Interactive global PoP &amp; route map</span></a>' +
           '<a href="network"><span class="dd-title">Peering Density</span><span class="dd-desc">100+ Internet Exchanges worldwide</span></a>' +
         '</div>' +
@@ -80,7 +80,7 @@
     '<div class="footer-brand">' +
       '<div class="logo-text">NETLAYER</div>' +
       '<p>Asia Pacific\'s friendly global wholesale carrier, delivering customisable, scalable and low-latency network solutions from edge to cloud.</p>' +
-      '<div class="status-banner"><div class="status-dot"></div><div class="status-text">Network Operational &middot; AS24482</div></div>' +
+      '<div class="status-banner"><div class="status-dot"></div><div class="status-text">Network Operational &middot; AS50839</div></div>' +
     '</div>' +
     '<div class="footer-col"><h4>Products</h4><ul>' +
       '<li><a href="cloud-connect">Cloud Connect</a></li>' +
